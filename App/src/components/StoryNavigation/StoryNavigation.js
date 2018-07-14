@@ -11,8 +11,14 @@ export default class StoryNavigation extends Component {
   render () {
     return (
       <div>
-        <StoryNavigationButton direction='left' />
-        <StoryNavigationButton direction='right' />
+        <StoryNavigationButton
+          direction='left'
+          pageIdFunc={this.props.pageIdDec}
+        />
+        <StoryNavigationButton
+          direction='right'
+          pageIdFunc={this.props.pageIdInc}
+        />
       </div>
     );
   }

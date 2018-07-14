@@ -13,6 +13,15 @@ export default class Story extends Component {
     return ;
   }
 
+  // these can be actions when redux gets introduces
+  pageIdInc(pageId) {
+    return pageId + 1;
+  }
+
+  pageIdDec(pageId) {
+    return pageId - 1;
+  }
+
   render () {
     // will be all of the pages needed to tell the story
     const pages = [];
@@ -23,7 +32,7 @@ export default class Story extends Component {
         <StoryCloseButton />
         <PageViewer pageId={1} pages={pages} />
         {/* <StoryPage /> */}
-        <StoryNavigation />
+        <StoryNavigation pageIdInc={this.pageIdInc} pageIdDec={this.pageIdDec} />
       </Fragment>
     );
   }
@@ -42,6 +51,7 @@ class PageViewer extends Component {
     const pageId = this.props.pageId ? this.props.pageId : 'failed to load page id';
     return (
       <div>
+        {/* This must be replaced with a method that handles printing all the content from a page object */}
         { `Now displaying pageId: ${pageId}` }
       </div>
     );

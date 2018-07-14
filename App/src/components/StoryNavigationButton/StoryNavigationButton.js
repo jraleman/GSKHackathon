@@ -5,14 +5,15 @@ export default class StoryNavigationButton extends Component {
     super(props);
     this.state = {};
     this.direction = props.direction;
+    this.pageIdFunc = props.pageIdFunc;
     return ;
   }
 
   render () {
     return (
-      <div>
-        { `this is the Navigation Button ${this.direction}` }
-      </div>
+      <button>
+        { this.direction }
+      </button>
     );
   }
 }
