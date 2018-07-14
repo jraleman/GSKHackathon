@@ -1,4 +1,4 @@
-import { PAGEID_INCREASE, PAGEID_DECREASE } from './constants';
+import { PAGEID_INCREASE, PAGEID_DECREASE, LOAD_STORY } from './constants';
 
 export const pageIdInc = () => ({
   type: PAGEID_INCREASE
@@ -6,4 +6,9 @@ export const pageIdInc = () => ({
 
 export const pageIdDec = () => ({
   type: PAGEID_DECREASE
+});
+
+export const loadStory = pages => ({
+  type: LOAD_STORY,
+  payload: pages
 });
