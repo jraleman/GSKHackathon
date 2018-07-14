@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import StoryText from '../StoryText';
 import StoryAnimation from '../StoryAnimation';
+import StoryNavigation from '../StoryNavigation';
 
 export default class Story extends Component {
   constructor (props) {
@@ -15,6 +16,7 @@ export default class Story extends Component {
         { 'This is the Story Component' }
         <StoryText />
         <StoryAnimation />
+        <StoryNavigation />
       </div>
     );
   }
