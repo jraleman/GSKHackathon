@@ -13,11 +13,12 @@ export default class Story extends Component {
   }
 
   render () {
+    const storyText = 'This is the text being passed to the StoryText Component';
     return (
       <Fragment>
         <CssBaseline />
         <StoryCloseButton />
-        <StoryText />
+        <StoryText text={storyText} />
         <StoryAnimation />
         <StoryNavigation />
       </Fragment>
