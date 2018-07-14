@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import logo from '../../images/logo.svg';
+import Story from '../../components/Story';
 
 class RootContainer extends React.Component {
   constructor (props) {
@@ -15,9 +16,10 @@ class RootContainer extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
+        {/* <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> */}
+        <Story />
       </div>
     );
   }
