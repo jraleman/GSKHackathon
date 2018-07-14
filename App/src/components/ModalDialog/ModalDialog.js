@@ -7,7 +7,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 
-class ComicModalDialog extends React.Component {
+class ModalDialog extends React.Component {
   constructor (props) {
     super(props);
     this._onPress = this.props.onPress;
@@ -68,4 +68,4 @@ class ComicModalDialog extends React.Component {
   }
 }
 
-export default ComicModalDialog;
+export default ModalDialog;

@@ -3,7 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import AppHeader from '../../components/AppHeader';
 import TabNavbar from '../../components/TabNavbar';
-import ComicScreen from '../ComicScreen';
+import LibraryPageViewer from '../LibraryPageViewer';
 import themes from '../../themes';
 import './styles.css';
 
@@ -19,7 +19,7 @@ class RootContainer extends React.Component {
         <MuiThemeProvider theme={ themes }>
           <AppHeader title={ "Nawell :: Comic Books" }/>
           <CssBaseline />
-          <ComicScreen />
+          <LibraryPageViewer />
           <TabNavbar />
         </MuiThemeProvider>
       </React.Fragment>

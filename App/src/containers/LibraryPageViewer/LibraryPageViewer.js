@@ -4,13 +4,13 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Masonry from 'react-masonry-component';
-import ComicFilterButton from '../../components/ComicFilterButton';
-import ComicAutoSuggest from '../../components/ComicAutoSuggest';
-import ComicModalDialog from '../../components/ComicModalDialog';
-import ComicGridItem from '../../components/ComicGridItem';
+import FilterButton from '../../components/FilterButton';
+import AutoSuggest from '../../components/AutoSuggest';
+import ModalDialog from '../../components/ModalDialog';
+import GridItem from '../../components/GridItem';
 import styles from './styles';
 
-class ComicScreen extends React.Component {
+class LibraryPageViewer extends React.Component {
   constructor (props) {
     super(props);
     this._classes = this.props.classes;
@@ -39,13 +39,13 @@ class ComicScreen extends React.Component {
           container={ true }
           spacing={ 24 }
         >
-          <ComicGridItem
+          <GridItem
             title={ "ComicBook1" }
             image={'https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg'}
             onPress={ this.toggleModal }
           />
           { this.state.toggle == false ? null :
-            <ComicModalDialog
+            <ModalDialog
               title={ "ComicBook1" }
               description={ "..." }
               onPress={ this.navigateStory }
@@ -57,8 +57,8 @@ class ComicScreen extends React.Component {
   }
 }
 
-ComicScreen.propTypes = {
+LibraryPageViewer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ComicScreen);
+export default withStyles(styles)(LibraryPageViewer);

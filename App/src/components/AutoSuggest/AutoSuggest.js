@@ -141,7 +141,7 @@ const styles = theme => ({
   },
 });
 
-class ComicAutoSuggest extends React.Component {
+class AutoSuggest extends React.Component {
   state = {
     value: '',
     suggestions: [],
@@ -194,8 +194,8 @@ class ComicAutoSuggest extends React.Component {
   }
 }
 
-ComicAutoSuggest.propTypes = {
+AutoSuggest.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ComicAutoSuggest);
+export default withStyles(styles)(AutoSuggest);

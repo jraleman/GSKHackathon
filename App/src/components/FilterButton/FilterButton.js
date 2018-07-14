@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-class ComicFilterButton extends React.Component {
+class FilterButton extends React.Component {
   constructor (props) {
     super(props);
     this._text = this.props.text;
@@ -29,4 +29,4 @@ class ComicFilterButton extends React.Component {
   }
 }
 
-export default ComicFilterButton;
+export default FilterButton;

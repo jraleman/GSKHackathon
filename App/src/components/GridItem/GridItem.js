@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import styles from './styles';
 
-class ComicGridItem extends React.Component {
+class GridItem extends React.Component {
   constructor (props) {
     super(props);
     this._title = this.props.title;
@@ -50,8 +50,8 @@ class ComicGridItem extends React.Component {
   }
 }
 
-ComicGridItem.propTypes = {
+GridItem.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ComicGridItem);
+export default withStyles(styles)(GridItem);
