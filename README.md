@@ -4,8 +4,10 @@
 Apache Cordova is a wrapper framework to allow diverse web technologies and cross-
 platform such as HTML5, JS, and CSS. Execution in the application is required for
 each platform, which relies in API bindings to deploy capable device.
-![alt-text][logo]
+![architecture][logo]
+
 [logo]: https://github.com/jraleman/GSKHackathon/blob/zeid/res/cordovaapparchitecture.png
+
 ## How to Run it
 - To run Narwhile on Cordova, install the the tools first. For *iOS* users, go to
 `narwhile-cordova` run the program by `npm run iphone`.
