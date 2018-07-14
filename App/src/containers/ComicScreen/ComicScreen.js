@@ -3,6 +3,7 @@ import ComicFilterButton from '../../components/ComicFilterButton';
 import ComicAutoSuggest from '../../components/ComicAutoSuggest';
 import ComicModalDialog from '../../components/ComicModalDialog';
 import ComicGridItem from '../../components/ComicGridItem';
+import ComicTabNavbar from '../../components/ComicTabNavbar';
 
 class ComicScreen extends React.Component {
   constructor (props) {
@@ -22,6 +23,7 @@ class ComicScreen extends React.Component {
           <ComicAutoSuggest />
           <ComicModalDialog />
           <ComicGridItem />
+          <ComicTabNavbar />
         </div>
       </React.Fragment>
     );
