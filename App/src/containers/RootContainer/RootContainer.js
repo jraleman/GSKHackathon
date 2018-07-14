@@ -1,7 +1,7 @@
 import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import './styles.css';
-import FilterButton from '../../components/FilterButton';
-import logo from '../../images/logo.svg';
+import MainScreen from '../../screens/MainScreen';
 
 class RootContainer extends React.Component {
   constructor (props) {
@@ -11,9 +11,10 @@ class RootContainer extends React.Component {
   }
   render () {
     return (
-      <div className={'root-container'}>
-        <FilterButton />
-      </div>
+      <React.Fragment>
+        <CssBaseline />
+        <MainScreen />
+      </React.Fragment>
     );
   }
 }
