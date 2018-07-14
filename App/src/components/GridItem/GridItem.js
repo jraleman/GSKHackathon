@@ -11,7 +11,7 @@ class GridItem extends React.Component {
   constructor (props) {
     super(props);
     this._title = this.props.title;
-    this._description = this.props.description;
+    this._author = this.props.author;
     this._classes = this.props.classes;
     this._image = this.props.image;
     this._onPress = this.props.onPress;
@@ -29,19 +29,19 @@ class GridItem extends React.Component {
           onClick={ this._onPress }
         >
           <Paper className={ this._classes.paper }>
+            <img
+              src={ this._image }
+              alt={ this._title }
+              style={{ width: '100%' }}
+             />
             <Typography
               variant="headline"
               component="h3"
             >
               { this._title }
             </Typography>
-            <img
-              src={ this._image }
-              alt={ this._title }
-              style={{ width: '100%' }}
-             />
             <Typography component="p">
-              { this._description }
+              { this._author }
             </Typography>
           </Paper>
         </Grid>

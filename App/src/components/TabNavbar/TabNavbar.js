@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import InfoIcon from '@material-ui/icons/Info';
+import AppsIcon from '@material-ui/icons/Apps';
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 import styles from './styles';
 
 
@@ -31,16 +31,19 @@ class TabNavbar extends React.Component {
         className={ this._classes.root }
       >
         <BottomNavigationAction
-          label="Recents"
-          icon={<RestoreIcon />}
+          disabled={ false }
+          label="Library"
+          icon={ <AppsIcon /> }
         />
         <BottomNavigationAction
-          label="Favorites"
-          icon={<FavoriteIcon />}
+          disabled={ true }
+          label="StoryBook"
+          icon={ <ChromeReaderModeIcon /> }
         />
         <BottomNavigationAction
-          label="Nearby"
-          icon={<LocationOnIcon />}
+          disabled={ false }
+          label="Info"
+          icon={ <InfoIcon /> }
         />
       </BottomNavigation>
     );
