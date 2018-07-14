@@ -1,53 +1,51 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import styles from './styles';
 
-const styles = {
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
-};
-
-function ComicGridItem(props) {
-  const { classes } = props;
-  return (
-    <div>
-      <Card className={classes.card}>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="headline" component="h2">
-            Lizard
-          </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
-      </Card>
-    </div>
-  );
+class ComicGridItem extends React.Component {
+  constructor (props) {
+    super(props);
+    this._title = this.props.title;
+    this._description = this.props.description;
+    this._classes = this.props.classes;
+    this._image = this.props.image;
+    this.state = {};
+    return ;
+  }
+  render () {
+    return (
+      <React.Fragment>
+        <Grid
+          item={ true }
+          xs={ 12 }
+          sm={ 6 }
+          md={ 4 }
+        >
+          <Paper className={ this._classes.paper }>
+            <Typography
+              variant="headline"
+              component="h3"
+            >
+              { this._title }
+            </Typography>
+            <img
+              src={ this._image }
+              alt={ this._title }
+              style={{ width: '100%' }}
+             />
+            <Typography component="p">
+              { this._description }
+            </Typography>
+          </Paper>
+        </Grid>
+      </React.Fragment>
+    );
+  }
 }
 
 ComicGridItem.propTypes = {
