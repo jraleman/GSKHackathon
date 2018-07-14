@@ -11,7 +11,7 @@ export default class StoryCloseButton extends Component {
   render () {
     return (
       <Link to='/'>
-        { 'this is the StoryCloseButton Component' }
+        &times;
       </Link>
     );
   }
