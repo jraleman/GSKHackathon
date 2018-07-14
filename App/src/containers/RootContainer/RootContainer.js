@@ -8,6 +8,8 @@ import LibraryPageViewer from '../LibraryPageViewer';
 import themes from '../../themes';
 import './styles.css';
 
+const logo = require("../../themes/images/logo.svg")
+
 class RootContainer extends React.Component {
   constructor (props) {
     super(props);
@@ -18,7 +20,10 @@ class RootContainer extends React.Component {
     return (
       <React.Fragment>
         <MuiThemeProvider theme={ themes }>
-          <AppHeader title={ "Nawell :: Comic Books" }/>
+          <AppHeader
+            logo={ logo }
+            title={ "Narwell :: Just a pinch" }
+          />
           <CssBaseline />
           <LibraryPageViewer />
           <TabNavbar />
