@@ -10,6 +10,12 @@ import ModalDialog from '../../components/ModalDialog';
 import GridItem from '../../components/GridItem';
 import styles from './styles';
 
+// title
+// cover
+// description
+// storyId
+// author
+
 class LibraryPageViewer extends React.Component {
   constructor (props) {
     super(props);

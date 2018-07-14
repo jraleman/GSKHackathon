@@ -3,6 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import AppHeader from '../../components/AppHeader';
 import TabNavbar from '../../components/TabNavbar';
+import Story from '../../components/Story';
 import LibraryPageViewer from '../LibraryPageViewer';
 import themes from '../../themes';
 import './styles.css';
