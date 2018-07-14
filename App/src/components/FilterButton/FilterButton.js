@@ -6,7 +6,7 @@ class FilterButton extends React.Component {
     super(props);
     this._text = this.props.text;
     this._category = this.props.category;
-    this.state = {};
+    this._disable = this.props.disable;
     return ;
   }
   render () {
@@ -14,8 +14,13 @@ class FilterButton extends React.Component {
     return (
       <div className={ rootClasses }>
         <Button
-          variant="raised"
-          color="primary"
+          color={ 'primary' }
+          disable={ this._disable }
+          disableFocusRipple={ false }
+          disableRipple={ false }
+          fullWidth={ false }
+          size={ 'medium '}
+          variant={ 'outlined' }
         >
           { this._text }
         </Button>
