@@ -108,31 +108,26 @@ If you wish to save this into a log file.
 ![#f3bd71](http://via.placeholder.com/150/f3bd71/000000?text=f3bd71)
 ![#92bced](http://via.placeholder.com/150/92bced/000000?text=92bced)
 
-
-### Font
-
-Impact
-...
-
-### Icons
-
-....
-
 ### Look & Feel
 
-....
+- [Material UI](https://material-ui.com/)
 
-## TODO
+#### Font
 
-...
+- [Impact](https://www.wfonts.com/font/impact)
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+
+#### Icons
+
+- [Material Design Icons](https://materialdesignicons.com/)
 
 ## Contributors
 
-- Jose Ramon Aleman
-- Felipe Romo
-- Zeid Tisnes
-- Gerardo Malpartida
-- Daniel Gonzalez
+- [Jose Ramón Aleman](https://github.com/jraleman)
+- [Daniel Gonzalez](https://github.com/dannygonza)
+- [Gerardo Malpartida](https://github.com/regien)
+- [Felipe Romo](https://github.com/felromo)
+- [Zeid Tisnes](https://github.com/zedin27)
 
 ## Resources
 
