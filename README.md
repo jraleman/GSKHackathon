@@ -2,6 +2,10 @@
 
 ## About
 
+## How to Run it
+- To run Narwhile on Cordova, install the the tools first. for *iOS* users, run the program by `npm run iphone`.
+This will create an emulator for iPhone users. 
+
 ## Required Modules
 
 - []()
@@ -15,7 +19,7 @@
 
 ## Tools
 
-*
+* npm install -g cordova
 *
 
 ## Authors
@@ -23,7 +27,7 @@
 - [Jose Ramón Aleman](https://github.com/jraleman)
 - [Fulano]()
 - [Gerardo Malpartida](https://github.com/regien)
-- [Mengano]()
+- [Felipe Romo](https://github.com/felromo)
 - [Zeid Tisnes](https://github.com/zedin27)
 
 ## Resources
