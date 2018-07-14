@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class StoryCloseButton extends Component {
   constructor (props) {
@@ -9,9 +10,9 @@ export default class StoryCloseButton extends Component {
 
   render () {
     return (
-      <div>
+      <Link to='/'>
         { 'this is the StoryCloseButton Component' }
-      </div>
+      </Link>
     );
   }
 }
