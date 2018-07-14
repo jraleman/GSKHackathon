@@ -17,7 +17,7 @@ class RootContainer extends React.Component {
     return (
       <React.Fragment>
         <MuiThemeProvider theme={ themes }>
-          <AppHeader />
+          <AppHeader title={ "Nawell :: Comic Books" }/>
           <CssBaseline />
           <ComicScreen />
           <TabNavbar />
