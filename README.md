@@ -1,10 +1,15 @@
 # GSKHackathon
 
 ## About
-
+Apache Cordova is a wrapper framework to allow diverse web technologies and cross-
+platform such as HTML5, JS, and CSS. Execution in the application is required for
+each platform, which relies in API bindings to deploy capable device.
+![alt-text][logo]
+[logo]: 
 ## How to Run it
-- To run Narwhile on Cordova, install the the tools first. for *iOS* users, run the program by `npm run iphone`.
-This will create an emulator for iPhone users. 
+- To run Narwhile on Cordova, install the the tools first. For *iOS* users, go to
+`narwhile-cordova` run the program by `npm run iphone`.
+This will create an emulator for iPhone users.
 
 ## Required Modules
 
