@@ -10,9 +10,9 @@ class FilterButton extends React.Component {
     return ;
   }
   render () {
-    const classes = `filter-btn ${ this._category }`;
+    const rootClasses = `filter-btn ${ this._category }`;
     return (
-      <div className={ classes }>
+      <div className={ rootClasses }>
         <Button
           variant="raised"
           color="primary"
