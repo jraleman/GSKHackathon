@@ -11,6 +11,7 @@ class AppHeader extends React.Component {
     super(props);
     this._classes = this.props.classes;
     this._title = this.props.title;
+    this._logo = this.props.logo;
     this.state = {};
     return ;
   }
@@ -22,6 +23,11 @@ class AppHeader extends React.Component {
           color={ "default" }
         >
           <Toolbar>
+            <img
+              src={ this._logo }
+              alt={ this._title }
+              style={{ width: 'auto', height: 40, paddingRight: 12 }}
+            />
             <Typography
               variant={ "title" }
               color={ "inherit" }
