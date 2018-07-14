@@ -13,7 +13,7 @@ const styles = {
   },
 };
 
-class ComicTabNavbar extends React.Component {
+class TabNavbar extends React.Component {
   state = {
     value: 0,
   };
@@ -41,8 +41,8 @@ class ComicTabNavbar extends React.Component {
   }
 }
 
-ComicTabNavbar.propTypes = {
+TabNavbar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ComicTabNavbar);
+export default withStyles(styles)(TabNavbar);
