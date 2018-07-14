@@ -141,7 +141,7 @@ const styles = theme => ({
   },
 });
 
-class FilterBar extends React.Component {
+class ComicAutoSuggest extends React.Component {
   state = {
     value: '',
     suggestions: [],
@@ -194,8 +194,8 @@ class FilterBar extends React.Component {
   }
 }
 
-FilterBar.propTypes = {
+ComicAutoSuggest.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(FilterBar);
+export default withStyles(styles)(ComicAutoSuggest);
