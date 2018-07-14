@@ -111,6 +111,7 @@ If you wish to save this into a log file.
 
 ### Font
 
+Impact
 ...
 
 ### Icons
