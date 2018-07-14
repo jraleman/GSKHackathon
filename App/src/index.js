@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './containers/RootContainer';
+import Story from './components/Story';
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 // import reducers
 import reducers from './reducers';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // pass reducers
 const store = createStore(reducers,
@@ -14,7 +16,12 @@ const store = createStore(reducers,
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <div>
+        <Route exact path='/' component={App} />
+        <Route path='/story' component={Story} />
+      </div>
+    </Router>
   </Provider>,
   document.getElementById('root'));
 registerServiceWorker();
