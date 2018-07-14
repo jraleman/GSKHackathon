@@ -86,15 +86,21 @@ If you wish to save this into a log file.
 
 ### Colors
 
-#### Primary
+#### Primary (Narwell)
 
-![#424242](http://via.placeholder.com/150/424242/ffffff?text=424242)
-![#424242](http://via.placeholder.com/150/525252/ffffff?text=525252)
-![#424242](http://via.placeholder.com/150/626262/ffffff?text=626262)
+![#f2f5f8](http://via.placeholder.com/150/f2f5f8/000000?text=f2f5f8)
+![#a7bbc2](http://via.placeholder.com/150/a7bbc2/ffffff?text=a7bbc2)
+![#55c2bc](http://via.placeholder.com/150/55c2bc/000000?text=55c2bc)
+![#22aad0](http://via.placeholder.com/150/22aad0/000000?text=22aad0)
+![#094761](http://via.placeholder.com/150/094761/000000?text=094761)
 
-#### Secondary
+#### Secondary (Virus)
 
-![#696969](http://via.placeholder.com/150/696969/ffffff?text=696969)
+![#f6f5f6](http://via.placeholder.com/150/f6f5f6/000000?text=f6f5f6)
+![#c292bb](http://via.placeholder.com/150/c292bb/ffffff?text=c292bb)
+![#8e3482](http://via.placeholder.com/150/8e3482/000000?text=8e3482)
+![#671e5c](http://via.placeholder.com/150/671e5c/000000?text=671e5c)
+![#390e34](http://via.placeholder.com/150/390e34/000000?text=390e34)
 
 #### Dark / Light
 
