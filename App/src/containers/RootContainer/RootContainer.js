@@ -8,14 +8,14 @@ import themes from '../../themes';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-const logo = require("../../themes/images/logo.svg")
+const logo = require('../../themes/images/logo.svg');
 
 const RootContainer = () => (
   <React.Fragment>
     <MuiThemeProvider theme={themes}>
       <AppHeader
         logo={logo}
-        title={"Narwell :: Just a pinch"}
+        title={'Narwell :: Just a pinch'}
       />
       <CssBaseline />
       <Link to='/story'>
