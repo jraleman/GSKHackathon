@@ -14,6 +14,7 @@ class ComicGridItem extends React.Component {
     this._description = this.props.description;
     this._classes = this.props.classes;
     this._image = this.props.image;
+    this._onPress = this.props.onPress;
     this.state = {};
     return ;
   }
@@ -25,6 +26,7 @@ class ComicGridItem extends React.Component {
           xs={ 12 }
           sm={ 6 }
           md={ 4 }
+          onClick={ this._onPress }
         >
           <Paper className={ this._classes.paper }>
             <Typography
