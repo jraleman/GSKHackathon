@@ -6,10 +6,10 @@ const mapStateToProps = state => ({
   pageId: state.page
 });
 
-const mapDispatchToProps = dispatch => ({
-  pageIdInc1: () => dispatch(pageIdInc()),
-  pageIdDec1: () => dispatch(pageIdDec())
-});
+const mapDispatchToProps = {
+  pageIdInc,
+  pageIdDec
+};
 
 export default connect(
   mapStateToProps,
