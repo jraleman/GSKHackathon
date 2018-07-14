@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import StoryText from '../StoryText';
 
-export default class Story extends Component {
+export default class StoryText extends Component {
   constructor (props) {
     super(props);
     this.state = {};
@@ -11,8 +10,7 @@ export default class Story extends Component {
   render () {
     return (
       <div>
-        { 'This is the Story Component' }
-        <StoryText />
+        { 'this is the StoryText Component' }
       </div>
     );
   }
