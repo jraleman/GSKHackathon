@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StoryText from '../StoryText';
+import StoryAnimation from '../StoryAnimation';
 
 export default class Story extends Component {
   constructor (props) {
@@ -13,6 +14,7 @@ export default class Story extends Component {
       <div>
         { 'This is the Story Component' }
         <StoryText />
+        <StoryAnimation />
       </div>
     );
   }
