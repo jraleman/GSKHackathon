@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"lol": "cordova emulate ios --target=\"iPhone-6s, 10.2\""
   },
   "repository": {
     "type": "git",
