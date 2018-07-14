@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import StoryText from '../StoryText';
 import StoryAnimation from '../StoryAnimation';
 import StoryNavigation from '../StoryNavigation';
@@ -13,13 +14,13 @@ export default class Story extends Component {
 
   render () {
     return (
-      <div>
-        { 'This is the Story Component' }
+      <Fragment>
+        <CssBaseline />
         <StoryCloseButton />
         <StoryText />
         <StoryAnimation />
         <StoryNavigation />
-      </div>
+      </Fragment>
     );
   }
 }
