@@ -10,7 +10,6 @@ export default class Story extends Component {
     this.state = {
       pageId: 1
     };
-    return ;
   }
 
   render () {
@@ -27,23 +26,3 @@ export default class Story extends Component {
     );
   }
 }
-
-// class PageViewer extends Component {
-//   constructor (props) {
-//     super(props);
-//     this.pages = this.props.pages;
-//     this.pageId = this.props.pageId;
-//     this.state = {};
-//     return ;
-//   }
-
-//   render () {
-//     const pageId = this.props.pageId ? this.props.pageId : 'failed to load page id';
-//     return (
-//       <div>
-//         {/* This must be replaced with a method that handles printing all the content from a page object */}
-//         { `Now displaying pageId: ${pageId}` }
-//       </div>
-//     );
-//   }
-// }
