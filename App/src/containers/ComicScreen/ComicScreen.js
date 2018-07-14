@@ -1,6 +1,7 @@
 import React from 'react';
 import ComicFilterButton from '../../components/ComicFilterButton';
 import ComicAutoSuggest from '../../components/ComicAutoSuggest';
+import ComicModalDialog from '../../components/ComicModalDialog';
 
 class ComicScreen extends React.Component {
   constructor (props) {
@@ -18,6 +19,7 @@ class ComicScreen extends React.Component {
             category={ 'option1' }
           />
           <ComicAutoSuggest />
+          <ComicModalDialog />
         </div>
       </React.Fragment>
     );

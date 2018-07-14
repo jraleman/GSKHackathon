@@ -1,7 +1,7 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import ComicScreen from '../../screens/ComicScreen';
+import ComicScreen from '../ComicScreen';
 import themes from '../../themes';
 import './styles.css';
 
