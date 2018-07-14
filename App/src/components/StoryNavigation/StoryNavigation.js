@@ -11,7 +11,6 @@ export default class StoryNavigation extends Component {
   render () {
     return (
       <div>
-        { 'this is the Navigation Component' }
         <StoryNavigationButton direction='left' />
         <StoryNavigationButton direction='right' />
       </div>
