@@ -1,10 +1,10 @@
-# Narwhile :: GSKHackathon Project
+# Narwell :: 2018 GSKHackathon Project
 
 <img src="resources/logo.svg" alt="logo" style="height: 100px; width: auto;" />
 
 ***Demystifying information through patient engagement***
 
-![npm](https://img.shields.io/badge/npm-v.6.1.0-33D5AE.svg)
+![npm](https://img.shields.io/badge/npm-v.6.2.0-22aad0.svg)
 
 ## About
 
@@ -21,10 +21,16 @@ Take a look at our pitch!
 Misinformation and easy accessibility to this information have enabled
 self taught medical experts.
 
+<img src="resources/screenshots/2.jpg" alt="logo" style="height: auto; width: 600px;" />
+
 ### How?
 
 By targeting expecting parents and educating them though our interactive
 platform.
+
+<img src="resources/screenshots/0.jpg" alt="screenshot1" style="height: auto; width: 600px;" />
+
+<img src="resources/screenshots/1.jpg" alt="schreensho" style="height: auto; width: 600px;" />
 
 ## Setup
 
@@ -221,9 +227,8 @@ If you wish to save this into a log file.
 
 ## Resources
 
-...
-
-Work in Progress
+1. ...
+2. Work in Progress
 
 ## License
 
