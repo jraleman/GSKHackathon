@@ -13,22 +13,7 @@ import Data from '../../fixtures';
 
 const logo = require('../../themes/images/logo.svg');
 
-// const RootContainer = ({ loadStory }) => (
-//   <React.Fragment>
-//     <MuiThemeProvider theme={themes}>
-//       <AppHeader
-//         logo={logo}
-//         title={'Narwell :: Just a pinch'}
-//       />
-//       <CssBaseline />
-//       <Link to='/story'>
-//         StoryBook
-//       </Link>
-//       <LibraryPageViewer />
-//       <TabNavbar />
-//     </MuiThemeProvider>
-//   </React.Fragment>
-// );
+const logoAlt = require('../../themes/images/logo-alt.svg');
 
 class RootContainer extends Component {
   constructor (props) {
@@ -44,13 +29,10 @@ class RootContainer extends Component {
       <React.Fragment>
         <MuiThemeProvider theme={themes}>
           <AppHeader
-            logo={logo}
+            logo={logoAlt}
             title={'Narwell :: Just a pinch'}
           />
           <CssBaseline />
-          <Link to='/story'>
-            StoryBook
-          </Link>
           <LibraryPageViewer />
           <TabNavbar />
         </MuiThemeProvider>
