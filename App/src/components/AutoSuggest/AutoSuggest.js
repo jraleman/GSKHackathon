@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
+import styles from './styles';
 
 const suggestions = [
   { label: 'Afghanistan' },
@@ -118,29 +119,6 @@ function getSuggestions(value) {
       });
 }
 
-const styles = theme => ({
-  container: {
-    flexGrow: 1,
-    position: 'relative',
-    height: 250,
-  },
-  suggestionsContainerOpen: {
-    position: 'absolute',
-    zIndex: 1,
-    marginTop: theme.spacing.unit,
-    left: 0,
-    right: 0,
-  },
-  suggestion: {
-    display: 'block',
-  },
-  suggestionsList: {
-    margin: 0,
-    padding: 0,
-    listStyleType: 'none',
-  },
-});
-
 class AutoSuggest extends React.Component {
   state = {
     value: '',
@@ -185,7 +163,7 @@ class AutoSuggest extends React.Component {
         renderSuggestion={renderSuggestion}
         inputProps={{
           classes,
-          placeholder: 'Search a country (start with a)',
+          placeholder: 'Search StoryBook',
           value: this.state.value,
           onChange: this.handleChange,
         }}
