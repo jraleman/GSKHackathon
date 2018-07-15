@@ -13,6 +13,12 @@ const StoryPageViewer = ({ story }) => (
     { `StoryDescription: ${story.story}` }
     <hr />
     { `Now displaying pageId: ${story.currentPage}` }
+    <hr />
+    <p>
+      { story.storyPages[0].pageContent }
+    </p>
+    <hr />
+    <img src={story.storyPages[0].pageAnimation} />
   </div>
 );
 

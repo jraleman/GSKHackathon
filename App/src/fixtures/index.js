@@ -7,17 +7,17 @@ const jsonResp = {
   "pageList": [
     {
       "pageId": 1,
-      "pageAnimation": "gifs/virus.gif",
+      "pageAnimation": "./test_virus_1_1.gif",
       "pageContent": "This is the story of a girl..."
     },
     {
       "pageId": 2,
-      "pageAnimation": "gifs/virus.gif",
+      "pageAnimation": "./test_virus_1_1.gif",
       "pageContent": "This is the story of a girl2..."
     },
     {
       "pageId": 3,
-      "pageAnimation": "gifs/virus.gif",
+      "pageAnimation": "./test_virus_1_1.gif",
       "pageContent": "This is the story of a girl3..."
     }
   ]
