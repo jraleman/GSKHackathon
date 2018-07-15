@@ -108,6 +108,21 @@ If you wish to save this into a log file.
 ![#f3bd71](http://via.placeholder.com/150/f3bd71/000000?text=f3bd71)
 ![#92bced](http://via.placeholder.com/150/92bced/000000?text=92bced)
 
+#### Nawell
+
+![#f2f5f8](http://via.placeholder.com/150/f2f5f8/000000?text=f2f5f8)
+![#a7bbc2](http://via.placeholder.com/150/a7bbc2/ffffff?text=a7bbc2)
+![#55c2bc](http://via.placeholder.com/150/55c2bc/000000?text=55c2bc)
+![#22aad0](http://via.placeholder.com/150/22aad0/000000?text=22aad0)
+![#094761](http://via.placeholder.com/150/094761/000000?text=094761)
+
+#### Virus
+
+![#f6f5f6](http://via.placeholder.com/150/f6f5f6/000000?text=f6f5f6)
+![#c292bb](http://via.placeholder.com/150/c292bb/ffffff?text=c292bb)
+![#8e3482](http://via.placeholder.com/150/8e3482/000000?text=8e3482)
+![#671e5c](http://via.placeholder.com/150/671e5c/000000?text=671e5c)
+![#390e34](http://via.placeholder.com/150/390e34/000000?text=390e34)
 
 ### Font
 
