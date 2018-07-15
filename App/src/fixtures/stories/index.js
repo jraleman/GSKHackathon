@@ -1,8 +1,4 @@
 const storiesList = [
-<<<<<<< HEAD
-  require('./json/storyOne.json'),
-  require('./json/storyTwo.json')
-=======
   require("./json/storyOne.json"),
   require("./json/storyTwo.json"),
   require("./json/storyThree.json"),
@@ -13,7 +9,6 @@ const storiesList = [
   require("./json/storyEight.json"),
   require("./json/storyNine.json"),
   require("./json/storyTen.json"),
->>>>>>> origin/jraleman
 ];
 
 export default storiesList;
