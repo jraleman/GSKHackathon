@@ -114,8 +114,6 @@ If you wish to save this into a log file.
 ![#f3bd71](http://via.placeholder.com/150/f3bd71/000000?text=f3bd71)
 ![#92bced](http://via.placeholder.com/150/92bced/000000?text=92bced)
 
-### Look & Feel
-
 - [Material UI](https://material-ui.com/)
 
 #### Font
