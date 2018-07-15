@@ -10,6 +10,22 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
 const suggestions = [
+  {
+    title: "ComicBook1",
+    author: "Jone Doe",
+    cover: " https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg",
+    description: "Brief description about this comic...",
+  },
+  {
+    title: "ComicBook2",
+    author: "Jane Doe",
+    cover: "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/02/gabe-newell-1-1021x580.jpg",
+    description: "Another brief description about this comic...",
+  },
+];
+
+/*
+const suggestions = [
   { label: 'Afghanistan' },
   { label: 'Aland Islands' },
   { label: 'Albania' },
@@ -45,6 +61,17 @@ const suggestions = [
   { label: 'British Indian Ocean Territory' },
   { label: 'Brunei Darussalam' },
 ];
+*/
+
+
+
+// Call API -> Parse Data -> Output suggestionsList
+/*
+function parseSuggestionData (data) {
+
+  return ;
+}
+*/
 
 function renderInput(inputProps) {
   const { classes, ref, ...other } = inputProps;
@@ -64,8 +91,8 @@ function renderInput(inputProps) {
 }
 
 function renderSuggestion(suggestion, { query, isHighlighted }) {
-  const matches = match(suggestion.label, query);
-  const parts = parse(suggestion.label, matches);
+  const matches = match(suggestion.title, query);
+  const parts = parse(suggestion.title, matches);
 
   return (
     <MenuItem selected={isHighlighted} component="div">
@@ -97,7 +124,7 @@ function renderSuggestionsContainer(options) {
 }
 
 function getSuggestionValue(suggestion) {
-  return suggestion.label;
+  return suggestion.title;
 }
 
 function getSuggestions(value) {
@@ -109,7 +136,7 @@ function getSuggestions(value) {
     ? []
     : suggestions.filter(suggestion => {
         const keep =
-          count < 5 && suggestion.label.toLowerCase().slice(0, inputLength) === inputValue;
+          count < 5 && suggestion.title.toLowerCase().slice(0, inputLength) === inputValue;
 
         if (keep) {
           count += 1;
@@ -163,7 +190,7 @@ class AutoSuggest extends React.Component {
         renderSuggestion={renderSuggestion}
         inputProps={{
           classes,
-          placeholder: 'Search StoryBook',
+          placeholder: this.props.placeholder,
           value: this.state.value,
           onChange: this.handleChange,
         }}

@@ -56,7 +56,10 @@ class LibraryPageViewer extends React.Component {
   render () {
     return (
       <div className={this._classes.root}>
-        <AutoSuggest />
+        <AutoSuggest
+          placeholder={ "Search a story book..." }
+          data={ storiesList }
+        />
         <div style={{ display: 'inline-block' }}>
           <FilterButton
             text={ "Virus1" }
