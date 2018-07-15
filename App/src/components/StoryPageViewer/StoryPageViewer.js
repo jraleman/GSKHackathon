@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ViewWithOption = ({ text, animation }) => (
+const ViewWithOption = ({ text, animation, option, clickHandle }) => (
   <div>
     { text }
-    <Link to='/'>
-      Answer A
-    </Link>
-    <Link to='/'>
-      Answer B
-    </Link>
+    <button onClick={() => clickHandle(option.route_a)}>Choice A</button>
+    <button onClick={() => clickHandle(option.route_b)}>Choice B</button>
     <img src={animation} />
   </div>
 );
@@ -21,8 +17,17 @@ const ViewWithoutOption = ({ text, animation }) => (
   </div>
 );
 
-const StoryPageViewer = ({ page }) => (
-  page.option.isAvailable ? <ViewWithOption text={page.pageContent} animation={page.pageAnimation} /> : <ViewWithoutOption text={page.pageContent} animation={page.pageAnimation} />
+const StoryPageViewer = ({ page, moveToPage }) => (
+  page.option.isAvailable ? 
+    <ViewWithOption text={page.pageContent}
+      animation={page.pageAnimation}
+      clickHandle={moveToPage}
+      option={page.option}
+    /> 
+    :
+    <ViewWithoutOption text={page.pageContent} animation={page.pageAnimation}
+      clickHandle={moveToPage}
+    />
 );
 
 export default StoryPageViewer;

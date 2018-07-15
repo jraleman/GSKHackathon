@@ -11,10 +11,12 @@
       "pageAnimation": "./test_virus_1_1.gif",
       "pageContent": "I'm the Measles",
       "option": {
-        "isAvailable": true,
+        "isAvailable": false,
         "question": "",
         "answer_a": "",
-        "answer_b": ""
+        "answer_b": "",
+        "route_a": "",
+        "route_b": ""
       }
     },
     {
@@ -25,7 +27,9 @@
         "isAvailable": true,
         "question": "this is the question",
         "answer_a": "",
-        "answer_b": ""
+        "answer_b": "",
+        "route_a": 1,
+        "route_b": 3
       }
     },
     {
@@ -36,7 +40,9 @@
         "isAvailable": true,
         "question": "",
         "answer_a": "",
-        "answer_b": ""
+        "answer_b": "",
+        "route_a": 1,
+        "route_b": 2
       }
     }
   ]

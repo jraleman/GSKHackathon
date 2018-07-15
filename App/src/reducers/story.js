@@ -1,4 +1,4 @@
-import { PAGEID_INCREASE, PAGEID_DECREASE, LOAD_STORY } from '../actions/constants';
+import { PAGEID_INCREASE, PAGEID_DECREASE, LOAD_STORY, MOVE_TO_PAGE } from '../actions/constants';
 
 const defaultState = {
   storyId: '',
@@ -42,6 +42,11 @@ const story = (state = defaultState, action) => {
       return pageIdIncrease(state, action);
     case PAGEID_DECREASE:
       return pageIdDecrease(state, action);
+    case MOVE_TO_PAGE:
+      return {
+        ...state,
+        currentPage: action.payload
+      };
     default:
       return state;
   }
