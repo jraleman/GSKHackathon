@@ -1,9 +1,9 @@
 {
   "storyId": "storyTwo",
-  "title": "ComicBook2",
+  "title": "Bugsplat Cure",
   "author": "Jane Doe",
-  "cover": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/02/gabe-newell-1-1021x580.jpg",
-  "description": "Brief description about this comic...",
+  "cover": "https://banner2.kisspng.com/20180211/sgq/kisspng-common-cold-influenza-symptom-flu-season-virus-sick-child-5a806879472fd2.3966938815183647932916.jpg",
+  "description": "lorem ipsum",
   "navigate": "/path/to/storyTwo",
   "pageList": [
     {

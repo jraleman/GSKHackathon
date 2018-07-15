@@ -2,7 +2,7 @@ const styles = {
   root: {
     width: '100%',
     marginTop: 12,
-    position: 'absolute',
+    position: 'fixed',
     bottom: 0
   }
 };

@@ -1,22 +1,20 @@
 {
-  "storyId": "storyOne",
-  "title": "VAC and Lola: Curing the Disease",
-  "author": "Jone Doe",
-  "cover": "https://previews.123rf.com/images/corbacserdar/corbacserdar1602/corbacserdar160200552/52766731-white-backround-vector-illustration-of-a-measles-kids.jpg",
+  "storyId": "storyNine",
+  "title": "Vac-woman!",
+  "author": "Zeid",
+  "cover": "https://www.defeatdd.org/sites/default/files/Vaccine%20v%20rota.jpg",
   "description": "lorem ipsum",
-  "navigate": "/path/to/storyOne",
+  "navigate": "/path/to/storyNine",
   "pageList": [
     {
       "pageId": 1,
       "pageAnimation": "./test_virus_1_1.gif",
       "pageContent": "I'm the Measles",
       "option": {
-        "isAvailable": false,
+        "isAvailable": true,
         "question": "",
         "answer_a": "",
-        "answer_b": "",
-        "route_a": "",
-        "route_b": ""
+        "answer_b": ""
       }
     },
     {
@@ -27,9 +25,7 @@
         "isAvailable": true,
         "question": "this is the question",
         "answer_a": "",
-        "answer_b": "",
-        "route_a": 1,
-        "route_b": 3
+        "answer_b": ""
       }
     },
     {
@@ -40,9 +36,7 @@
         "isAvailable": true,
         "question": "",
         "answer_a": "",
-        "answer_b": "",
-        "route_a": 1,
-        "route_b": 2
+        "answer_b": ""
       }
     }
   ]
