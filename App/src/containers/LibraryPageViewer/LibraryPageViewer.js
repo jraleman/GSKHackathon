@@ -9,6 +9,8 @@ import AutoSuggest from '../../components/AutoSuggest';
 import ModalDialog from '../../components/ModalDialog';
 import GridItem from '../../components/GridItem';
 import styles from './styles';
+import { connect } from 'react-redux';
+import { loadStory } from '../../actions/';
 
 // Emulate JSON response
 import storiesList from '../../fixtures/stories';
@@ -32,8 +34,7 @@ class LibraryPageViewer extends React.Component {
     // creates X amount of 'bool' elements inside
     // the toggle array
     // ugly, but it works!
-    this.state.toggle = new Array(this.state.storiesCount);
-    this.state.toggle.fill(false);
+    this.state.toggle = storiesList.map(() => false);
     return ;
   }
   // ugly, but works!
@@ -49,8 +50,9 @@ class LibraryPageViewer extends React.Component {
     }
     return ;
   }
-  navigateStory = () => {
-    alert('navigateStory');
+  navigateStory = (story) => {
+    // load the story
+    this.props.loadStory(storiesList[story]);
     return ;
   }
   render () {
@@ -113,7 +115,7 @@ class LibraryPageViewer extends React.Component {
                       title={ storiesList[i].title }
                       description={ storiesList[i].description }
                       cover={ storiesList[i].cover }
-                      onPress={ this.navigateStory }
+                      onPress={ () => this.navigateStory(i) }
                     />
                  }
                </React.Fragment>
@@ -129,4 +131,14 @@ LibraryPageViewer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(LibraryPageViewer);
+const with_styles = withStyles(styles)(LibraryPageViewer);
+
+const mapStateToProps = null;
+const mapDispatchToProps = {
+  loadStory
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(with_styles);

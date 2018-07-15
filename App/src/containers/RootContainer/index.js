@@ -30,7 +30,7 @@ class RootContainer extends Component {
     ));
   }
   componentDidMount () {
-    this.props.loadStory(Data);
+    // this.props.loadStory(Data);
   }
   render () {
     return (
