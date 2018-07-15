@@ -14,11 +14,15 @@ each platform, which relies in API bindings to deploy capable device when needed
 
 ## How to Run it
 To run Narwhile on Cordova, install the the tools first. For *iOS* users, go to
-`narwhile-cordova` and run the program by `npm run iphone`.
+`narwell-cordova` and run the program by `npm run iphone`.
 This will create an emulator for iPhone users.
 
 ## Required Modules
 
+- `cordova plugin add cordova-plugin-device`
+- `cordova platform add browser`
+- `cordova platform add ios
+`
 ## Dependencies
 
 - [Cordova](https://cordova.apache.org/)
