@@ -1,10 +1,10 @@
 {
-  "storyId": "storyThree",
-  "title": "Curing the World",
-  "author": "Eugene",
-  "cover": "https://render.fineartamerica.com/images/rendered/default/poster/7.000/8.000/break/images/artworkimages/medium/1/polio-cartoon-1957-granger.jpg",
+  "storyId": "storySeven",
+  "title": "Don't Slow Down!",
+  "author": "Zeid",
+  "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ5pKpcpXadfk3zxOlHC2rjYRIbD3jyHqj_wlJhCZvDaOQxwyz",
   "description": "lorem ipsum",
-  "navigate": "/path/to/storyThree",
+  "navigate": "/path/to/storySeven",
   "pageList": [
     {
       "pageId": 1,

@@ -1,10 +1,10 @@
 {
-  "storyId": "storyThree",
-  "title": "Curing the World",
-  "author": "Eugene",
-  "cover": "https://render.fineartamerica.com/images/rendered/default/poster/7.000/8.000/break/images/artworkimages/medium/1/polio-cartoon-1957-granger.jpg",
+  "storyId": "storyEight",
+  "title": "Take it or Leave it",
+  "author": "Zeid",
+  "cover": "https://capspediatrics.com/images/vaccine-cartoon.png",
   "description": "lorem ipsum",
-  "navigate": "/path/to/storyThree",
+  "navigate": "/path/to/storyEight",
   "pageList": [
     {
       "pageId": 1,
