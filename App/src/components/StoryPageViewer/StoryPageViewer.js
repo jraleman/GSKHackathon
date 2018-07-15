@@ -22,7 +22,7 @@ const ViewWithoutOption = ({ text, animation }) => (
 );
 
 const StoryPageViewer = ({ page }) => (
-  page.option.isAvailable ? <ViewWithOption text={page.pageContent} animation={page.pageAnimation}/> : <ViewWithoutOption text={page.pageContent} animation={page.pageAnimation} />
+  page.option.isAvailable ? <ViewWithOption text={page.pageContent} animation={page.pageAnimation} /> : <ViewWithoutOption text={page.pageContent} animation={page.pageAnimation} />
 );
 
 export default StoryPageViewer;

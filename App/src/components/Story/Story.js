@@ -11,7 +11,7 @@ const Story = ({ story }) => (
       <CssBaseline />
       <StoryCloseButton />
       <StoryPageViewer page={story.storyPages
-        .find(page => page.pageId == story.currentPage)}
+        .find(page => page.pageId === story.currentPage)}
       />
       <StoryNavigation />
     </Fragment>) : <Redirect to='/' />
