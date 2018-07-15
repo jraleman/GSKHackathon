@@ -6,6 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
+import { Link } from 'react-router-dom';
 
 class ModalDialog extends React.Component {
   constructor (props) {
@@ -58,7 +59,9 @@ class ModalDialog extends React.Component {
             <DialogContentText id="alert-dialog-slide-description">
               { this._description }
             </DialogContentText>
-            <Button onClick={ this._onPress }>
+            <Button onClick={ this._onPress }
+              component={Link}
+              to='/story'>
               { "Open Storybook" }
             </Button>
           </DialogContent>
