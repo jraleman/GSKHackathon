@@ -12,7 +12,13 @@ class FilterButton extends React.Component {
   render () {
     const rootClasses = `filter-btn ${ this._category }`;
     return (
-      <div className={ rootClasses }>
+      <div
+        className={ rootClasses }
+        style={{
+          display: 'inline',
+          paddingRight: 6,
+        }}
+      >
         <Button
           color={ 'primary' }
           disable={ this._disable }

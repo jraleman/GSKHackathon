@@ -12,15 +12,23 @@ import { loadStory } from '../../actions';
 import Data from '../../fixtures';
 
 const logo = require('../../themes/images/logo.svg');
-
 const logoAlt = require('../../themes/images/logo-alt.svg');
+
+// Show / Hide Toogle:
+// https://stackoverflow.com/questions/29913387/show-hide-components-in-reactjs
 
 class RootContainer extends Component {
   constructor (props) {
     super(props);
-    this.state = {};
+    this.state = {
+      childVisible: false
+    };
   }
-
+  onClick() {
+    this.setState(prevState => (
+      { childVisible: !prevState.childVisible }
+    ));
+  }
   componentDidMount () {
     this.props.loadStory(Data);
   }
