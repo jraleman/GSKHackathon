@@ -19,6 +19,10 @@ import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
 import styles from './styles';
 
+import InfoIcon from '@material-ui/icons/Info';
+import Icon from '@material-ui/core/Icon';
+import SaveIcon from '@material-ui/icons/Save';
+
 class InfoPageViewer extends React.Component {
   constructor (props) {
     super(props);
@@ -135,9 +139,33 @@ class InfoPageViewer extends React.Component {
 
           <ol>
             <li>
-              Some parents think that getting the "natural" disease is preferable to "artificial" vaccination, leading to a "natural" immunity. Some even arrange chickenpox "parties" to ensure their child gets infected. It’s true that for some diseases, getting infected will lead to immunity, but the price paid for natural disease can include paralysis, brain injury, liver cancer, deafness, blindness, or even death. When you consider the seriousness of these risks, vaccination is definitely the better choice.
+              { 'Some parents think that getting the "natural" disease is preferable to "artificial" vaccination, leading to a "natural" immunity. Some even arrange chickenpox "parties" to ensure their child gets infected. It’s true that for some diseases, getting infected will lead to immunity, but the price paid for natural disease can include paralysis, brain injury, liver cancer, deafness, blindness, or even death. When you consider the seriousness of these risks, vaccination is definitely the better choice.' }
             </li>
           </ol>
+          { /* FAQ Button */}
+          <Button
+            variant="contained"
+            color="primary"
+            className={ this._classes.button }
+          >
+            <Icon className={ this._classes.leftIcon }>
+              <InfoIcon />
+            </Icon>
+            { "FAQ Common Questions" }
+          </Button>
+          { /* Arguments Button */ }
+          <Button
+            variant="contained"
+            color="primary"
+            className={ this._classes.button }
+          >
+            <Icon className={ this._classes.leftIcon }>
+              <InfoIcon />
+            </Icon>
+            { "Common Arguments Against Vaccines" }
+          </Button>
+
+
             <a href='https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29'>
             http://www.vaccineinformation.org/faqs-common-questions/
             </a>
@@ -145,6 +173,8 @@ class InfoPageViewer extends React.Component {
             <a href='https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29'>
             https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29
             </a>
+
+
           </Paper>
         </div>
       </div>
