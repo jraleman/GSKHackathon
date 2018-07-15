@@ -68,22 +68,28 @@ class LibraryPageViewer extends React.Component {
         </div>
         <div style={{
             marginBottom: 12,
-            marginTop: 12
+            marginTop: 12,
+            textAlign: 'center'
           }}
         >
           <FilterButton
+            className={ this._classes.btn }
             text={ "Dotis Innis" }
           />
           <FilterButton
+            className={ this._classes.btn }
             text={ "Vitium Motus" }
           />
           <FilterButton
+            className={ this._classes.btn }
             text={ "Crafectio Ambuplexia" }
           />
           <FilterButton
+            className={ this._classes.btn }
             text={ "Inteslor Maracinoma" }
           />
           <FilterButton
+            className={ this._classes.btn }
             text={ "Accessio Verminosa" }
           />
         </div>
