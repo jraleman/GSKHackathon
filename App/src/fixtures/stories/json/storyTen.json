@@ -1,0 +1,43 @@
+{
+  "storyId": "storyTen",
+  "title": "Vaccines are friends, not enemies!",
+  "author": "Zeid",
+  "cover": "https://thedo.osteopathic.org/wp-content/uploads/2015/04/vaccines.png",
+  "description": "lorem ipsum",
+  "navigate": "/path/to/storyTen",
+  "pageList": [
+    {
+      "pageId": 1,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "I'm the Measles",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 2,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl2...",
+      "option": {
+        "isAvailable": true,
+        "question": "this is the question",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 3,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl3...",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    }
+  ]
+}

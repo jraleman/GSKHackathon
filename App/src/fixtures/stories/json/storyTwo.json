@@ -1,0 +1,43 @@
+{
+  "storyId": "storyTwo",
+  "title": "Bugsplat Cure",
+  "author": "Jane Doe",
+  "cover": "https://banner2.kisspng.com/20180211/sgq/kisspng-common-cold-influenza-symptom-flu-season-virus-sick-child-5a806879472fd2.3966938815183647932916.jpg",
+  "description": "lorem ipsum",
+  "navigate": "/path/to/storyTwo",
+  "pageList": [
+    {
+      "pageId": 1,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "I'm the Measles",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 2,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl2...",
+      "option": {
+        "isAvailable": true,
+        "question": "this is the question",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 3,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl3...",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    }
+  ]
+}

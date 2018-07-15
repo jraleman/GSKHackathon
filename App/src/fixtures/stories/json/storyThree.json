@@ -1,0 +1,43 @@
+{
+  "storyId": "storyThree",
+  "title": "Curing the World",
+  "author": "Eugene",
+  "cover": "https://render.fineartamerica.com/images/rendered/default/poster/7.000/8.000/break/images/artworkimages/medium/1/polio-cartoon-1957-granger.jpg",
+  "description": "lorem ipsum",
+  "navigate": "/path/to/storyThree",
+  "pageList": [
+    {
+      "pageId": 1,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "I'm the Measles",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 2,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl2...",
+      "option": {
+        "isAvailable": true,
+        "question": "this is the question",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 3,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl3...",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    }
+  ]
+}

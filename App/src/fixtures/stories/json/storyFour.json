@@ -1,0 +1,43 @@
+{
+  "storyId": "storyFour",
+  "title": "The Adventures of the VaccineX",
+  "author": "Zeid",
+  "cover": "https://banner2.kisspng.com/20180311/xdw/kisspng-vaccination-vaccine-child-preventive-healthcare-di-baby-vaccination-cartoon-cartoon-5aa5c185ac9661.1590887415208124217069.jpg",
+  "description": "lorem ipsum",
+  "navigate": "/path/to/storyFour",
+  "pageList": [
+    {
+      "pageId": 1,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "I'm the Measles",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 2,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl2...",
+      "option": {
+        "isAvailable": true,
+        "question": "this is the question",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 3,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl3...",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    }
+  ]
+}

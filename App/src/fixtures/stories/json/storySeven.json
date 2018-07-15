@@ -1,0 +1,43 @@
+{
+  "storyId": "storySeven",
+  "title": "Don't Slow Down!",
+  "author": "Zeid",
+  "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ5pKpcpXadfk3zxOlHC2rjYRIbD3jyHqj_wlJhCZvDaOQxwyz",
+  "description": "lorem ipsum",
+  "navigate": "/path/to/storySeven",
+  "pageList": [
+    {
+      "pageId": 1,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "I'm the Measles",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 2,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl2...",
+      "option": {
+        "isAvailable": true,
+        "question": "this is the question",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 3,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl3...",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    }
+  ]
+}
