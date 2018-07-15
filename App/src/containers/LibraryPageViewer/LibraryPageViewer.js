@@ -66,19 +66,25 @@ class LibraryPageViewer extends React.Component {
             data={ storiesList }
           />
         </div>
-        <div style={{ 
+        <div style={{
             marginBottom: 12,
             marginTop: 12
           }}
         >
           <FilterButton
-            text={ "Virus1" }
+            text={ "Dotis Innis" }
           />
           <FilterButton
-            text={ "Virus2" }
+            text={ "Vitium Motus" }
           />
           <FilterButton
-            text={ "Virus3" }
+            text={ "Crafectio Ambuplexia" }
+          />
+          <FilterButton
+            text={ "Inteslor Maracinoma" }
+          />
+          <FilterButton
+            text={ "Accessio Verminosa" }
           />
         </div>
         <Grid
