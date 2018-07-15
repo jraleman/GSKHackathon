@@ -7,6 +7,15 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import PropTypes from 'prop-types';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Avatar from '@material-ui/core/Avatar';
+import ImageIcon from '@material-ui/icons/Image';
+import WorkIcon from '@material-ui/icons/Work';
+import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import Divider from '@material-ui/core/Divider';
 import styles from './styles';
 
 class InfoPageViewer extends React.Component {
@@ -22,52 +31,84 @@ class InfoPageViewer extends React.Component {
   _ButtonAppBar = () => (
     <div className={this._classes.root}>
       <AppBar position='static'>
-        <Toolbar>
-          <Typography variant='title' color='inherit' style={{ flewGrow: 1 }}>
-          Info
-          </Typography>
-          <Button color='inherit'>Vaccine Basics</Button>
-          <Button color='inherit'>Infants/Children</Button>
-          <Button color='inherit'>Pre-Teens</Button>
-          <Button color='inherit'>Teens</Button>
-          <Button color='inherit'>Adults</Button>
-          <Button color='inherit'>Diseases</Button>
+        <Toolbar style={{ selfAlign: 'center' }}>
+          <Button color='inherit'>{ "Vaccine Basics" }</Button>
+          <Button color='inherit'>{ "Infants/Children" }</Button>
+          <Button color='inherit'>{ "Pre-Teens" }</Button>
+          <Button color='inherit'>{ "Teens" }</Button>
+          <Button color='inherit'>{ "Adults" }</Button>
+          <Button color='inherit'>{ "Diseases" }</Button>
         </Toolbar>
       </AppBar>
     </div>
   );
   render () {
     return (
-      <div className={this._classes.root}>
+      <div className={this._classes.root} style={{  }}>
         { <this._ButtonAppBar /> }
-        <h1>Frequently Asked Questions</h1>
-        <br />
-        <ul>
-          <p>
-            Why are vaccinations important?
-          </p>
-          <li>
-            Vaccinations protect your child against serious diseases by stimulating the immune system to create antibodies against certain bacteria or viruses
-          </li>
-          <p>
-          What diseases do vaccines protect against?
-          </p>
-          <li>
-          Immunizing your baby with vaccines protects against serious viral diseases like measles, whooping cough, polio, tetanus, rotavirus, hepatitis A, hepatitis B, chickenpox, influenza, and others
-          </li>
-          <p>
-          I don’t know anybody who has had these diseases. Why does my baby need these vaccines?
-          </p>
-          <li>
-          While a few of these diseases have virtually disappeared because of vaccination, outbreaks of measles and whooping cough still occur in the U.S. Even if some diseases do completely disappear in the U.S., they are common in other parts of the world and are just a plane ride away. If we stop vaccinating against these diseases, many more people will become infected. Vaccinating your child will keep him or her safe.
-          </li>
-          <p>
-          Are there better ways to protect my baby against these diseases?
-          </p>
-          <li>
-          No. Breastfeeding offers temporary immunity against some minor infections like colds, but it is not an effective means of protecting a child from the specific diseases prevented by vaccines. Likewise, vitamins won’t protect against the bacteria and viruses that cause these serious diseases. Chiropractic remedies, naturopathy, and homeopathy are totally ineffective in preventing vaccine-preventable diseases.
-          </li>
-        </ul>
+
+        { /* Title Content*/ }
+        <Typography variant='title' color='inherit'>
+          { "Frequently Asked Questions" }
+        </Typography>
+
+        { /* FAQ List */ }
+        <List>
+          { /* FAQ 1 */ }
+           <ListItem>
+             <Avatar>
+               <ImageIcon />
+             </Avatar>
+            <ListItemText
+              primary={ "Why are vaccinations important?" }
+              secondary={"Vaccinations protect your child against serious diseases by stimulating the immune system to create antibodies against certain bacteria or viruses"}
+            />
+           </ListItem>
+           <li>
+             <Divider inset />
+           </li>
+           { /* FAQ 2 */ }
+            <ListItem>
+              <Avatar>
+                <ImageIcon />
+              </Avatar>
+             <ListItemText
+               primary={ "What diseases do vaccines protect against?" }
+               secondary={"Immunizing your baby with vaccines protects against serious viral diseases like measles, whooping cough, polio, tetanus, rotavirus, hepatitis A, hepatitis B, chickenpox, influenza, and others"}
+             />
+            </ListItem>
+            <li>
+              <Divider inset />
+            </li>
+            { /* FAQ 3 */ }
+             <ListItem>
+               <Avatar>
+                 <ImageIcon />
+               </Avatar>
+              <ListItemText
+                primary={ "I don’t know anybody who has had these diseases. Why does my baby need these vaccines?" }
+                secondary={"While a few of these diseases have virtually disappeared because of vaccination, outbreaks of measles and whooping cough still occur in the U.S. Even if some diseases do completely disappear in the U.S., they are common in other parts of the world and are just a plane ride away. If we stop vaccinating against these diseases, many more people will become infected. Vaccinating your child will keep him or her safe."}
+              />
+             </ListItem>
+             <li>
+               <Divider inset />
+             </li>
+             { /* FAQ 4 */ }
+              <ListItem>
+                <Avatar>
+                  <ImageIcon />
+                </Avatar>
+               <ListItemText
+                 primary={ "Are there better ways to protect my baby against these diseases?" }
+                 secondary={"No. Breastfeeding offers temporary immunity against some minor infections like colds, but it is not an effective means of protecting a child from the specific diseases prevented by vaccines. Likewise, vitamins won’t protect against the bacteria and viruses that cause these serious diseases. Chiropractic remedies, naturopathy, and homeopathy are totally ineffective in preventing vaccine-preventable diseases."}
+               />
+              </ListItem>
+              <li>
+                <Divider inset />
+              </li>
+         </List>
+
+
         <h1>
           Common Arguments Against Vaccines Demystified
         </h1>
