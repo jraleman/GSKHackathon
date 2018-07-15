@@ -9,6 +9,8 @@ import { createStore } from 'redux';
 // import reducers
 import reducers from './reducers';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import TabNavbar from './components/TabNavbar';
+import InfoPageViewer from './containers/InfoPageViewer/InfoPageViewer';
 
 // pass reducers
 const store = createStore(reducers,
@@ -20,6 +22,8 @@ ReactDOM.render(
       <div>
         <Route exact path='/' component={App} />
         <Route path='/story' component={Story} />
+        <Route path='/info' component={InfoPageViewer} />
+        {/* <TabNavbar /> */}
       </div>
     </Router>
   </Provider>,
