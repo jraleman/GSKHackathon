@@ -17,3 +17,5 @@ class StoryBookPageViewer extends React.Component {
     );
   }
 }
+
+export default StoryBookPageViewer;

@@ -18,3 +18,5 @@ class InfoPageViewer extends React.Component {
     );
   }
 }
+
+export default InfoPageViewer;
