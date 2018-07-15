@@ -2,7 +2,7 @@
   "storyId": "storyTwo",
   "title": "ComicBook2",
   "author": "Jane Doe",
-  "cover": "covers/story-one.jpg",
+  "cover": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/02/gabe-newell-1-1021x580.jpg",
   "description": "Brief description about this comic...",
   "pageList": [
     {

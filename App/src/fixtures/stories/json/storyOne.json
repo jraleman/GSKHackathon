@@ -2,7 +2,7 @@
   "storyId": "storyOne",
   "title": "ComicBook1",
   "author": "Jone Doe",
-  "cover": "covers/story-one.jpg",
+  "cover": "https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg",
   "description": "Brief description about this comic...",
   "pageList": [
     {

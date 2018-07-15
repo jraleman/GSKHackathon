@@ -80,14 +80,14 @@ class LibraryPageViewer extends React.Component {
                  <GridItem
                   key={ i }
                   title={ storiesList[i].title }
-                  image={'https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg'}
+                  image={ storiesList[i].cover }
                   onPress={ () => this.toggleModal(i) }
                  />
                  { this.state.toggle[i] == false ? null :
                     <ModalDialog
                       title={ storiesList[i].title }
                       description={ storiesList[i].description }
-                      cover={ 'https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/02/gabe-newell-1-1021x580.jpg' }
+                      cover={ storiesList[i].cover }
                       onPress={ this.navigateStory }
                     />
                  }
