@@ -10,11 +10,15 @@ import ModalDialog from '../../components/ModalDialog';
 import GridItem from '../../components/GridItem';
 import styles from './styles';
 
-// title
-// cover
-// description
-// storyId
-// author
+// Emulate JSON response
+import storiesList from '../../fixtures/stories';
+/*
+  storyId
+  title
+  author
+  cover
+  description
+*/
 
 class LibraryPageViewer extends React.Component {
   constructor (props) {
@@ -45,18 +49,27 @@ class LibraryPageViewer extends React.Component {
           container={ true }
           spacing={ 24 }
         >
-          <GridItem
-            title={ "ComicBook1" }
-            image={'https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg'}
-            onPress={ this.toggleModal }
-          />
-          { this.state.toggle == false ? null :
-            <ModalDialog
-              title={ "ComicBook1" }
-              description={ "..." }
-              onPress={ this.navigateStory }
-            />
-          }
+        {/* Render story items in a map */}
+        { Array.apply(null, Array(storiesList.length)).map(
+           function(item, i) {
+             return (
+               <React.Fragment>
+                 <GridItem
+                  key={ i }
+                  title={ storiesList[i].title }
+                  image={'https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg'}
+                  onPress={ this.toggleModal }
+                 />
+                 { this.state.toggle == false ? null :
+                    <ModalDialog
+                      title={ storiesList[i].title }
+                      description={ storiesList[i].description }
+                      onPress={ this.navigateStory }
+                    />
+                 }
+               </React.Fragment>
+             );
+        }, this)}
         </Grid>
       </div>
     );
