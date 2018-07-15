@@ -8,7 +8,7 @@
   "pageList": [
     {
       "pageId": 1,
-      "pageAnimation": "./test_virus_1_1.gif",
+      "pageAnimation": "./assets/test_virus_1_1.gif",
       "pageContent": "I'm the Measles",
       "option": {
         "isAvailable": false,
@@ -21,7 +21,7 @@
     },
     {
       "pageId": 2,
-      "pageAnimation": "./test_virus_1_1.gif",
+      "pageAnimation": "./assets/Asset 24.png",
       "pageContent": "This is the story of a girl2...",
       "option": {
         "isAvailable": true,
@@ -34,7 +34,7 @@
     },
     {
       "pageId": 3,
-      "pageAnimation": "./test_virus_1_1.gif",
+      "pageAnimation": "./assets/Asset 36.png",
       "pageContent": "This is the story of a girl3...",
       "option": {
         "isAvailable": true,
