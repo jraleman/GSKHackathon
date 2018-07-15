@@ -1,28 +1,19 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import StoryNavigation from '../../containers/StoryNavigation';
 import StoryCloseButton from '../StoryCloseButton';
 import StoryPageViewer from '../../containers/StoryPageViewer';
+import { Redirect } from 'react-router-dom';
 
-export default class Story extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      pageId: 1
-    };
-  }
+const Story = ({ story }) => (
+  story.storyPages.length ? (
+  <Fragment>
+    <CssBaseline />
+    <StoryCloseButton />
+    <StoryPageViewer page={story.storyPages.find(page => page.pageId == story.currentPage)}
+    />
+    <StoryNavigation />
+  </Fragment>) : <Redirect to='/' />
+);
 
-  render () {
-    // will be all of the pages needed to tell the story
-    return (
-      <Fragment>
-        <CssBaseline />
-        {/* this redirects back to the library view */}
-        <StoryCloseButton />
-        <StoryPageViewer />
-        {/* <StoryPage /> */}
-        <StoryNavigation />
-      </Fragment>
-    );
-  }
-}
+export default Story;
