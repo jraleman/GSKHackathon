@@ -50,9 +50,9 @@ class LibraryPageViewer extends React.Component {
     }
     return ;
   }
-  navigateStory = () => {
+  navigateStory = (story) => {
     // load the story
-    this.props.loadStory(storiesList[0]);
+    this.props.loadStory(storiesList[story]);
     return ;
   }
   render () {
@@ -103,7 +103,7 @@ class LibraryPageViewer extends React.Component {
                       title={ storiesList[i].title }
                       description={ storiesList[i].description }
                       cover={ storiesList[i].cover }
-                      onPress={ this.navigateStory }
+                      onPress={ () => this.navigateStory(i) }
                     />
                  }
                </React.Fragment>
