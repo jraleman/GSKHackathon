@@ -25,16 +25,27 @@ class LibraryPageViewer extends React.Component {
     super(props);
     this._classes = this.props.classes;
     this.state = {
-      toggle: false
+      storiesCount: storiesList.length,
+      toggle: []
     };
+    // don't judge!!!
+    // creates X amount of 'bool' elements inside
+    // the toggle array
+    // ugly, but it works!
+    this.state.toggle = new Array(this.state.storiesCount);
+    this.state.toggle.fill(false);
     return ;
   }
-  toggleModal = () => {
-    if (this.state.toggle == false) {
-      this.setState({ toggle: true });
+  // ugly, but works!
+  // source: https://stackoverflow.com/a/29537485
+  toggleModal = (i) => {
+    if (this.state.toggle[i] == false) {
+      this.state.toggle[i] = true;
+      this.forceUpdate()
     }
-    else {
-      this.setState({ toggle: false });
+    else if (this.state.toggle[i] == true) {
+      this.state.toggle[i] = false;
+      this.forceUpdate()
     }
     return ;
   }
@@ -50,7 +61,7 @@ class LibraryPageViewer extends React.Component {
           spacing={ 24 }
         >
         {/* Render story items in a map */}
-        { Array.apply(null, Array(storiesList.length)).map(
+        { Array.apply(null, Array(this.state.storiesCount)).map(
            function(item, i) {
              return (
                <React.Fragment>
@@ -58,9 +69,9 @@ class LibraryPageViewer extends React.Component {
                   key={ i }
                   title={ storiesList[i].title }
                   image={'https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg'}
-                  onPress={ this.toggleModal }
+                  onPress={ () => this.toggleModal(i) }
                  />
-                 { this.state.toggle == false ? null :
+                 { this.state.toggle[i] == false ? null :
                     <ModalDialog
                       title={ storiesList[i].title }
                       description={ storiesList[i].description }
