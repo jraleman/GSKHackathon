@@ -1,6 +1,6 @@
 # Narwhile :: GSKHackathon Project
 
-<img src="resources/logo.svg" alt="logo" style="height: 100px;" />
+<img src="resources/logo.svg" alt="logo" style="height: 100px; width: auto;" />
 
 ***Demystifying information through patient engagement***
 
