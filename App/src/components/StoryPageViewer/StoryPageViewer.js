@@ -1,8 +1,8 @@
 import React from 'react';
 
-const StoryPageViewer = ({ pageId, pages }) => (
+const StoryPageViewer = ({ story }) => (
   <div>
-    { `Now displaying pageId: ${pageId}` }
+    { `Now displaying pageId: ${story.currentPage}` }
   </div>
 );
 

@@ -8,13 +8,10 @@ import Data from '../../fixtures';
 export default class Story extends Component {
   constructor (props) {
     super(props);
-    // this.state = {
-    //   pageId: 1
-    // };
+    this.state = {};
   }
 
   componentDidMount () {
-    // fetch information here
     console.log(Data);
   }
 

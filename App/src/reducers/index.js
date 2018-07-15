@@ -3,6 +3,6 @@ import page from './page';
 import story from './story';
 
 export default combineReducers({
-  page,
+  // page,
   story
 });
