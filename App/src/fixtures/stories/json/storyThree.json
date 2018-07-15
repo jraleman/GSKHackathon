@@ -1,0 +1,43 @@
+{
+  "storyId": "storyThree",
+  "title": "ComicBook3",
+  "author": "Eugene",
+  "cover": "https://nerdist.com/wp-content/uploads/2017/12/Eugene_JoshMcDermitt_TWD-120117.jpg",
+  "description": "Cabello pritty",
+  "navigate": "/path/to/storyThree",
+  "pageList": [
+    {
+      "pageId": 1,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "I'm the Measles",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 2,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl2...",
+      "option": {
+        "isAvailable": true,
+        "question": "this is the question",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    },
+    {
+      "pageId": 3,
+      "pageAnimation": "./test_virus_1_1.gif",
+      "pageContent": "This is the story of a girl3...",
+      "option": {
+        "isAvailable": true,
+        "question": "",
+        "answer_a": "",
+        "answer_b": ""
+      }
+    }
+  ]
+}
