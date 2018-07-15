@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.narwell"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.example.narwell"
     }
   },
   "dependent_plugins": {}
