@@ -35,6 +35,8 @@ class TabNavbar extends React.Component {
           disabled={ false }
           label="Library"
           icon={ <AppsIcon /> }
+          component={Link}
+          to='/'
         />
         <BottomNavigationAction
           disabled={ true }
