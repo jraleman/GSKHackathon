@@ -104,12 +104,13 @@ const InfoBody = () => (
       </li>
     </ul>
     <h1>
-      <ol>
-        <li>
-        Some parents think that getting the "natural" disease is preferable to "artificial" vaccination, leading to a "natural" immunity. Some even arrange chickenpox "parties" to ensure their child gets infected. It’s true that for some diseases, getting infected will lead to immunity, but the price paid for natural disease can include paralysis, brain injury, liver cancer, deafness, blindness, or even death. When you consider the seriousness of these risks, vaccination is definitely the better choice.
-        </li>
-      </ol>
+      Common Arguments Against Vaccines Demystified
     </h1>
+    <ol>
+      <li>
+        Some parents think that getting the "natural" disease is preferable to "artificial" vaccination, leading to a "natural" immunity. Some even arrange chickenpox "parties" to ensure their child gets infected. It’s true that for some diseases, getting infected will lead to immunity, but the price paid for natural disease can include paralysis, brain injury, liver cancer, deafness, blindness, or even death. When you consider the seriousness of these risks, vaccination is definitely the better choice.
+      </li>
+    </ol>
   </div>
 );
 
