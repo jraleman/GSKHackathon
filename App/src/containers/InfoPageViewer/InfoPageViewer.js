@@ -16,6 +16,7 @@ import ImageIcon from '@material-ui/icons/Image';
 import WorkIcon from '@material-ui/icons/Work';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import Divider from '@material-ui/core/Divider';
+import Paper from '@material-ui/core/Paper';
 import styles from './styles';
 
 class InfoPageViewer extends React.Component {
@@ -46,68 +47,76 @@ class InfoPageViewer extends React.Component {
     return (
       <div className={this._classes.root} style={{  }}>
         { <this._ButtonAppBar /> }
+        { /* FAQ Container*/ }
+        <Paper
+          className={ this._classes.root }
+          elevation={ 1 }
+        >
+          { /* Title Content*/ }
+          <Typography
+            variant='title'
+            color='inherit'
+            style={{ marginLeft: 12 }}
+          >
+            { "Frequently Asked Questions" }
+          </Typography>
 
-        { /* Title Content*/ }
-        <Typography variant='title' color='inherit'>
-          { "Frequently Asked Questions" }
-        </Typography>
-
-        { /* FAQ List */ }
-        <List>
-          { /* FAQ 1 */ }
-           <ListItem>
-             <Avatar>
-               <ImageIcon />
-             </Avatar>
-            <ListItemText
-              primary={ "Why are vaccinations important?" }
-              secondary={"Vaccinations protect your child against serious diseases by stimulating the immune system to create antibodies against certain bacteria or viruses"}
-            />
-           </ListItem>
-           <li>
-             <Divider inset />
-           </li>
-           { /* FAQ 2 */ }
-            <ListItem>
-              <Avatar>
-                <ImageIcon />
-              </Avatar>
-             <ListItemText
-               primary={ "What diseases do vaccines protect against?" }
-               secondary={"Immunizing your baby with vaccines protects against serious viral diseases like measles, whooping cough, polio, tetanus, rotavirus, hepatitis A, hepatitis B, chickenpox, influenza, and others"}
-             />
-            </ListItem>
-            <li>
-              <Divider inset />
-            </li>
-            { /* FAQ 3 */ }
+          { /* FAQ List */ }
+          <List>
+            { /* FAQ 1 */ }
              <ListItem>
                <Avatar>
                  <ImageIcon />
                </Avatar>
               <ListItemText
-                primary={ "I don’t know anybody who has had these diseases. Why does my baby need these vaccines?" }
-                secondary={"While a few of these diseases have virtually disappeared because of vaccination, outbreaks of measles and whooping cough still occur in the U.S. Even if some diseases do completely disappear in the U.S., they are common in other parts of the world and are just a plane ride away. If we stop vaccinating against these diseases, many more people will become infected. Vaccinating your child will keep him or her safe."}
+                primary={ "Why are vaccinations important?" }
+                secondary={"Vaccinations protect your child against serious diseases by stimulating the immune system to create antibodies against certain bacteria or viruses"}
               />
              </ListItem>
              <li>
                <Divider inset />
              </li>
-             { /* FAQ 4 */ }
+             { /* FAQ 2 */ }
               <ListItem>
                 <Avatar>
                   <ImageIcon />
                 </Avatar>
                <ListItemText
-                 primary={ "Are there better ways to protect my baby against these diseases?" }
-                 secondary={"No. Breastfeeding offers temporary immunity against some minor infections like colds, but it is not an effective means of protecting a child from the specific diseases prevented by vaccines. Likewise, vitamins won’t protect against the bacteria and viruses that cause these serious diseases. Chiropractic remedies, naturopathy, and homeopathy are totally ineffective in preventing vaccine-preventable diseases."}
+                 primary={ "What diseases do vaccines protect against?" }
+                 secondary={"Immunizing your baby with vaccines protects against serious viral diseases like measles, whooping cough, polio, tetanus, rotavirus, hepatitis A, hepatitis B, chickenpox, influenza, and others"}
                />
               </ListItem>
               <li>
                 <Divider inset />
               </li>
-         </List>
-
+              { /* FAQ 3 */ }
+               <ListItem>
+                 <Avatar>
+                   <ImageIcon />
+                 </Avatar>
+                <ListItemText
+                  primary={ "I don’t know anybody who has had these diseases. Why does my baby need these vaccines?" }
+                  secondary={"While a few of these diseases have virtually disappeared because of vaccination, outbreaks of measles and whooping cough still occur in the U.S. Even if some diseases do completely disappear in the U.S., they are common in other parts of the world and are just a plane ride away. If we stop vaccinating against these diseases, many more people will become infected. Vaccinating your child will keep him or her safe."}
+                />
+               </ListItem>
+               <li>
+                 <Divider inset />
+               </li>
+               { /* FAQ 4
+                          TODO: Don't add "<li> <Divider inset /> </li>" at the end of the
+                          last element of the list.
+                 */ }
+                <ListItem>
+                  <Avatar>
+                    <ImageIcon />
+                  </Avatar>
+                 <ListItemText
+                   primary={ "Are there better ways to protect my baby against these diseases?" }
+                   secondary={"No. Breastfeeding offers temporary immunity against some minor infections like colds, but it is not an effective means of protecting a child from the specific diseases prevented by vaccines. Likewise, vitamins won’t protect against the bacteria and viruses that cause these serious diseases. Chiropractic remedies, naturopathy, and homeopathy are totally ineffective in preventing vaccine-preventable diseases."}
+                 />
+                </ListItem>
+          </List>
+      </Paper>
 
         <h1>
           Common Arguments Against Vaccines Demystified
