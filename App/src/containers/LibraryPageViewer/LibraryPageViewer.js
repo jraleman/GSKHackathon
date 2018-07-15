@@ -56,6 +56,18 @@ class LibraryPageViewer extends React.Component {
   render () {
     return (
       <div className={this._classes.root}>
+        <AutoSuggest />
+        <div style={{ display: 'inline-block' }}>
+          <FilterButton
+            text={ "Virus1" }
+          />
+          <FilterButton
+            text={ "Virus2" }
+          />
+          <FilterButton
+            text={ "Virus3" }
+          />
+        </div>
         <Grid
           container={ true }
           spacing={ 24 }
@@ -75,6 +87,7 @@ class LibraryPageViewer extends React.Component {
                     <ModalDialog
                       title={ storiesList[i].title }
                       description={ storiesList[i].description }
+                      cover={ 'https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/02/gabe-newell-1-1021x580.jpg' }
                       onPress={ this.navigateStory }
                     />
                  }
