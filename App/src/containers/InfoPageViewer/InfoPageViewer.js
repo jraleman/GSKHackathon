@@ -47,6 +47,12 @@ class InfoPageViewer extends React.Component {
       </AppBar>
     </div>
   );
+  handlerBtn1 = () => {
+    window.open('https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29');
+  }
+  handlerBtn2 = () => {
+    window.open('https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29');
+  }
   render () {
     return (
       <div className={this._classes.root}>
@@ -147,6 +153,7 @@ class InfoPageViewer extends React.Component {
             variant="contained"
             color="primary"
             className={ this._classes.button }
+            onClick={ this.handlerBtn1 }
           >
             <Icon className={ this._classes.leftIcon }>
               <InfoIcon />
@@ -158,23 +165,13 @@ class InfoPageViewer extends React.Component {
             variant="contained"
             color="primary"
             className={ this._classes.button }
+            onClick={ this.handlerBtn1 }
           >
             <Icon className={ this._classes.leftIcon }>
               <InfoIcon />
             </Icon>
             { "Common Arguments Against Vaccines" }
           </Button>
-
-
-            <a href='https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29'>
-            http://www.vaccineinformation.org/faqs-common-questions/
-            </a>
-            <br />
-            <a href='https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29'>
-            https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29
-            </a>
-
-
           </Paper>
         </div>
       </div>
