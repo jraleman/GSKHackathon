@@ -1,6 +1,5 @@
 # Narwhile :: GSKHackathon Project
 
-
 <img src="resources/logo.svg" alt="logo" style="height: 100px;" />
 
 ***Demystifying information through patient engagement***
@@ -11,6 +10,11 @@
 
 Narwell is an informational-guided tour providing various interactive
 scenarios that help inform patients decisions for that day’s procedure.
+
+Take a look at our pitch!
+
+- [Via Google Slides](https://docs.google.com/presentation/d/1JcQcFYAmtp1B0iffOQrPwQRRmcnKBRU6yscjPJ-VRXo/edit?usp=sharing)
+- [Download PDF](resources/presentation/Narwell)
 
 ### Why?
 
@@ -218,6 +222,8 @@ If you wish to save this into a log file.
 ## Resources
 
 ...
+
+Work in Progress
 
 ## License
 
