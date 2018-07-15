@@ -1,10 +1,10 @@
 {
-  "storyId": "storyThree",
-  "title": "Curing the World",
-  "author": "Eugene",
-  "cover": "https://render.fineartamerica.com/images/rendered/default/poster/7.000/8.000/break/images/artworkimages/medium/1/polio-cartoon-1957-granger.jpg",
+  "storyId": "storyFive",
+  "title": "Tough Laughs",
+  "author": "Zeid",
+  "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTgtHKhiFooOzmsRehFMeeiskVeLnTIoXOf20fVv9GiIgMah9X",
   "description": "lorem ipsum",
-  "navigate": "/path/to/storyThree",
+  "navigate": "/path/to/storyFive",
   "pageList": [
     {
       "pageId": 1,

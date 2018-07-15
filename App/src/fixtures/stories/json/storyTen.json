@@ -1,10 +1,10 @@
 {
-  "storyId": "storyThree",
-  "title": "Curing the World",
-  "author": "Eugene",
-  "cover": "https://render.fineartamerica.com/images/rendered/default/poster/7.000/8.000/break/images/artworkimages/medium/1/polio-cartoon-1957-granger.jpg",
+  "storyId": "storyTen",
+  "title": "Vaccines are friends, not enemies!",
+  "author": "Zeid",
+  "cover": "https://thedo.osteopathic.org/wp-content/uploads/2015/04/vaccines.png",
   "description": "lorem ipsum",
-  "navigate": "/path/to/storyThree",
+  "navigate": "/path/to/storyTen",
   "pageList": [
     {
       "pageId": 1,
