@@ -8,13 +8,13 @@ import themes from '../../themes';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-const logo = require('../../themes/images/logo.svg');
+const logoAlt = require('../../themes/images/logo-alt.svg');
 
 const RootContainer = () => (
   <React.Fragment>
     <MuiThemeProvider theme={themes}>
       <AppHeader
-        logo={logo}
+        logo={logoAlt}
         title={'Narwell :: Just a pinch'}
       />
       <CssBaseline />

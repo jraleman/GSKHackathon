@@ -20,13 +20,17 @@ class AppHeader extends React.Component {
       <div className={ this._classes.root }>
         <AppBar
           position={ "static" }
-          color={ "default" }
+          color={ "primary" }
         >
           <Toolbar>
             <img
               src={ this._logo }
               alt={ this._title }
-              style={{ width: 'auto', height: 40, paddingRight: 12 }}
+              style={{
+                width: 'auto',
+                height: 40,
+                paddingRight: 12
+              }}
             />
             <Typography
               variant={ "title" }
