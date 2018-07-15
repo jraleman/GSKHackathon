@@ -7,6 +7,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import AppsIcon from '@material-ui/icons/Apps';
 import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 import styles from './styles';
+import { Link } from 'react-router-dom';
 
 
 class TabNavbar extends React.Component {
@@ -40,11 +41,13 @@ class TabNavbar extends React.Component {
           label="StoryBook"
           icon={ <ChromeReaderModeIcon /> }
         />
-        <BottomNavigationAction
-          disabled={ false }
-          label="Info"
-          icon={ <InfoIcon /> }
-        />
+          <BottomNavigationAction
+            disabled={false}
+            label="Info"
+            icon={<InfoIcon />}
+            component={Link}
+            to='/info'
+          />
       </BottomNavigation>
     );
   }
