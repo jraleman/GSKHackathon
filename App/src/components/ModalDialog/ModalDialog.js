@@ -52,8 +52,9 @@ class ModalDialog extends React.Component {
           <DialogContent>
             <img
               alt={ this._title }
-              src={'https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg'}
-              />
+              src={ this._cover }
+              style={{ width: '100%' }}
+            />
             <DialogContentText id="alert-dialog-slide-description">
               { this._description }
             </DialogContentText>
