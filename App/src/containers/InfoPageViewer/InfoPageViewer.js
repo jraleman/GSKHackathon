@@ -111,6 +111,13 @@ const InfoBody = () => (
         Some parents think that getting the "natural" disease is preferable to "artificial" vaccination, leading to a "natural" immunity. Some even arrange chickenpox "parties" to ensure their child gets infected. It’s true that for some diseases, getting infected will lead to immunity, but the price paid for natural disease can include paralysis, brain injury, liver cancer, deafness, blindness, or even death. When you consider the seriousness of these risks, vaccination is definitely the better choice.
       </li>
     </ol>
+    <a href='https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29'>
+    http://www.vaccineinformation.org/faqs-common-questions/
+    </a>
+    <br />
+    <a href='https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29'>
+    https://medium.com/the-method/8-common-arguments-against-vaccines-5d45ad9c1e29
+    </a>
   </div>
 );
 
