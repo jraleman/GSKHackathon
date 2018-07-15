@@ -1,6 +1,6 @@
 # Narwell :: 2018 GSKHackathon Project
 
-<img src="resources/logo.svg" alt="logo" style="height: 100px; width: auto;" />
+![logo](resources/logo.png)
 
 ***Demystifying information through patient engagement***
 
