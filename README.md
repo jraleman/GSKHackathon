@@ -1,18 +1,43 @@
-# Narwhile :: GSKHackathon
+# Narwell :: 2018 GSKHackathon Project
 
-***The best GSKHackathon project.***
+![logo](resources/logo.png)
 
-![npm](https://img.shields.io/badge/npm-v.6.1.0-33D5AE.svg)
+***Demystifying information through patient engagement***
+
+![npm](https://img.shields.io/badge/npm-v.6.2.0-22aad0.svg)
 
 ## About
 
-...
+Narwell is an informational-guided tour providing various interactive
+scenarios that help inform patients decisions for that day’s procedure.
+
+Take a look at our pitch!
+
+- [Via Google Slides](https://docs.google.com/presentation/d/1JcQcFYAmtp1B0iffOQrPwQRRmcnKBRU6yscjPJ-VRXo/edit?usp=sharing)
+- [Download PDF](resources/presentation/Narwell)
+
+### Why?
+
+Misinformation and easy accessibility to this information have enabled
+self taught medical experts.
+
+<img src="resources/screenshots/2.jpg" alt="logo" style="height: auto; width: 600px;" />
+
+### How?
+
+By targeting expecting parents and educating them though our interactive
+platform.
+
+<img src="resources/screenshots/0.jpg" alt="screenshot1" style="height: auto; width: 600px;" />
+
+<img src="resources/screenshots/1.jpg" alt="schreensho" style="height: auto; width: 600px;" />
+
 ## Setup
 
 Clone the repository:
 
 ```
-git clone https://github.com/jraleman/narwhile-gskhackathon narwhile
+git clone https://github.com/jraleman/GSKHackathon narwhile
 cd narwhile
 ```
 
@@ -32,7 +57,72 @@ the component state.
 This is the main idea:
 
 ```
-...
+App/
+├── package-lock.json
+├── package.json
+├── public
+│   ├── assets
+│   │   ├── picture.png
+│   │   └── graphics.gif
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.js
+    ├── actions
+    │   ├── constants.js
+    │   └── index.js
+    ├── components
+    │   ├── AppHeader
+    │   │   ├── AppHeader.js
+    │   │   ├── index.js
+    │   │   └── styles.js
+    │   ├── AutoSuggest
+    │   │   ├── AutoSuggest.js
+    │   │   ├── index.js
+    │   │   └── styles.js
+    |   |  ...
+    │   └── TabNavbar
+    │       ├── TabNavbar.js
+    │       ├── index.js
+    │       └── styles.js
+    ├── containers
+    │   ├── InfoPageViewer
+    │   │   ├── InfoPageViewer.js
+    │   │   ├── index.js
+    │   │   └── styles.js
+    │   ├── LibraryPageViewer
+    │   │   ├── LibraryPageViewer.js
+    │   │   ├── index.js
+    │   │   └── styles.js
+    │   ├── RootContainer
+    │   │   ├── index.js
+    │   │   └── styles.css
+    |   |  ...
+    │   └── StoryPageViewer
+    │       └── index.js
+    ├── fixtures
+    │   ├── index.js
+    │   └── stories
+    │       ├── gif
+    │       │   └── pinkish-virus.gif
+    │       ├── index.js
+    │       └── json
+    │           ├── storyEight.json
+    |          ...
+    │           └── storyOne.json
+    ├── index.css
+    ├── index.js
+    ├── reducers
+    │   ├── index.js
+    │   ├── page.js
+    │   └── story.js
+    ├── registerServiceWorker.js
+    └── themes
+        ├── images
+        │   ├── logo-alt.svg
+        │   └── logo.svg
+        └── index.js
 ```
 
 ### Project Structure Walkthrough
@@ -43,6 +133,8 @@ directories in more detail.
 ```
 ...
 ```
+
+Work in progress. :)
 
 ## Style Guide
 
@@ -135,7 +227,8 @@ If you wish to save this into a log file.
 
 ## Resources
 
-...
+1. ...
+2. Work in Progress
 
 ## License
 
