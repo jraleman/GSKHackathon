@@ -3,13 +3,19 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import StoryNavigation from '../../containers/StoryNavigation';
 import StoryCloseButton from '../StoryCloseButton';
 import StoryPageViewer from '../../containers/StoryPageViewer';
+import Data from '../../fixtures';
 
 export default class Story extends Component {
   constructor (props) {
     super(props);
-    this.state = {
-      pageId: 1
-    };
+    // this.state = {
+    //   pageId: 1
+    // };
+  }
+
+  componentDidMount () {
+    // fetch information here
+    console.log(Data);
   }
 
   render () {
@@ -17,10 +23,8 @@ export default class Story extends Component {
     return (
       <Fragment>
         <CssBaseline />
-        {/* this redirects back to the library view */}
         <StoryCloseButton />
         <StoryPageViewer />
-        {/* <StoryPage /> */}
         <StoryNavigation />
       </Fragment>
     );

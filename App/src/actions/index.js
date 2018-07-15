@@ -8,9 +8,9 @@ export const pageIdDec = () => ({
   type: PAGEID_DECREASE
 });
 
-export const loadStory = pages => ({
+export const loadStory = story => ({
   type: LOAD_STORY,
-  payload: pages
+  payload: story
 });
 
 export const closeStory = () => ({
