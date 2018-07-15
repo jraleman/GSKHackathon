@@ -10,6 +10,22 @@ const defaultState = {
   currentPage: 1
 };
 
+const pageIdIncrease = (state, action) => {
+  const increaseBy = (state.currentPage + 1 > state.storyPages.length) ? 0 : 1;
+  return {
+    ...state,
+    currentPage: state.currentPage + increaseBy
+  };
+};
+
+const pageIdDecrease = (state, action) => {
+  const decreaseBy = (state.currentPage - 1 < 1) ? 0 : 1;
+  return {
+    ...state,
+    currentPage: state.currentPage - decreaseBy
+  };
+};
+
 const story = (state = defaultState, action) => {
   switch (action.type) {
     case LOAD_STORY:
@@ -23,15 +39,9 @@ const story = (state = defaultState, action) => {
         storyPages: action.payload.pageList
       };
     case PAGEID_INCREASE:
-      return {
-        ...state,
-        currentPage: state.currentPage + 1
-      };
+      return pageIdIncrease(state, action);
     case PAGEID_DECREASE:
-      return {
-        ...state,
-        currentPage: state.currentPage - 1
-      };
+      return pageIdDecrease(state, action);
     default:
       return state;
   }

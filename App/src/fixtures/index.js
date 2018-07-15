@@ -10,7 +10,7 @@ const jsonResp = {
       'pageAnimation': './test_virus_1_1.gif',
       'pageContent': "I'm the Measles",
       'option': {
-        'isAvailable': true,
+        'isAvailable': false,
         'question': '',
         'answer_a': '',
         'answer_b': ''
