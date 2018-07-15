@@ -10,6 +10,9 @@ import Slide from '@material-ui/core/Slide';
 class ModalDialog extends React.Component {
   constructor (props) {
     super(props);
+    this._title = this.props.title;
+    this._description = this.props.description;
+    this._cover = this.props.cover;
     this._onPress = this.props.onPress;
     this.state = {
       open: true
@@ -44,11 +47,15 @@ class ModalDialog extends React.Component {
           aria-describedby="alert-dialog-slide-description"
         >
           <DialogTitle id="alert-dialog-slide-title">
-            { "ComicBook1" }
+            { this._title }
           </DialogTitle>
           <DialogContent>
+            <img
+              alt={ this._title }
+              src={'https://www.pcgamesn.com/sites/default/files/gabe%20newell%20valve%20pc%20console.jpg'}
+              />
             <DialogContentText id="alert-dialog-slide-description">
-              { "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running." }
+              { this._description }
             </DialogContentText>
             <Button onClick={ this._onPress }>
               { "Open Storybook" }
