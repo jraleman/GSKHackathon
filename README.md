@@ -35,7 +35,7 @@ This will create an emulator for iPhone users.
 ## Authors
 
 - [Jose Ramón Aleman](https://github.com/jraleman)
-- [Fulano]()
+- [Daniel Gonzales]()
 - [Gerardo Malpartida](https://github.com/regien)
 - [Felipe Romo](https://github.com/felromo)
 - [Zeid Tisnes](https://github.com/zedin27)
