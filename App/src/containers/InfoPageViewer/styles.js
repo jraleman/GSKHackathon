@@ -31,6 +31,12 @@ const styles = theme => ({
   button: {
     margin: theme.spacing.unit,
   },
+  faqIcon: {
+    margin: theme.spacing.unit,
+  },
+  faqIconBg: {
+    backgroundColor: '#303F9F'
+  },
   leftIcon: {
     marginRight: theme.spacing.unit,
   },

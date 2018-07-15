@@ -22,6 +22,7 @@ import styles from './styles';
 import InfoIcon from '@material-ui/icons/Info';
 import Icon from '@material-ui/core/Icon';
 import SaveIcon from '@material-ui/icons/Save';
+import AddAlert from '@material-ui/icons/AddAlert';
 
 class InfoPageViewer extends React.Component {
   constructor (props) {
@@ -35,8 +36,12 @@ class InfoPageViewer extends React.Component {
   */
   _ButtonAppBar = () => (
     <div className={this._classes.root}>
-      <AppBar position='static'>
+      <AppBar
+        position='static'
+        color={ "default" }
+      >
         <Toolbar style={{ selfAlign: 'center' }}>
+          <Button color='primary'>{ "FAQ" }</Button>
           <Button color='inherit'>{ "Vaccine Basics" }</Button>
           <Button color='inherit'>{ "Infants/Children" }</Button>
           <Button color='inherit'>{ "Pre-Teens" }</Button>
@@ -76,8 +81,10 @@ class InfoPageViewer extends React.Component {
             <List>
               { /* FAQ 1 */ }
                <ListItem>
-                 <Avatar>
-                   <ImageIcon />
+                 <Avatar className={ this._classes.faqIconBg }>
+                   <Icon className={ this._classes.faqIcon }>
+                     <AddAlert />
+                   </Icon>
                  </Avatar>
                 <ListItemText
                   primary={ "Why are vaccinations important?" }
@@ -89,8 +96,10 @@ class InfoPageViewer extends React.Component {
                </li>
                { /* FAQ 2 */ }
                 <ListItem>
-                  <Avatar>
-                    <ImageIcon />
+                  <Avatar className={ this._classes.faqIconBg }>
+                    <Icon className={ this._classes.faqIcon }>
+                      <AddAlert />
+                    </Icon>
                   </Avatar>
                  <ListItemText
                    primary={ "What diseases do vaccines protect against?" }
@@ -102,8 +111,10 @@ class InfoPageViewer extends React.Component {
                 </li>
                 { /* FAQ 3 */ }
                  <ListItem>
-                   <Avatar>
-                     <ImageIcon />
+                   <Avatar className={ this._classes.faqIconBg }>
+                     <Icon className={ this._classes.faqIcon }>
+                       <AddAlert />
+                     </Icon>
                    </Avatar>
                   <ListItemText
                     primary={ "I don’t know anybody who has had these diseases. Why does my baby need these vaccines?" }
@@ -118,8 +129,10 @@ class InfoPageViewer extends React.Component {
                             last element of the list.
                    */ }
                   <ListItem>
-                    <Avatar>
-                      <ImageIcon />
+                    <Avatar className={ this._classes.faqIconBg }>
+                      <Icon className={ this._classes.faqIcon }>
+                        <AddAlert />
+                      </Icon>
                     </Avatar>
                    <ListItemText
                      primary={ "Are there better ways to protect my baby against these diseases?" }
