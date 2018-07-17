@@ -225,6 +225,10 @@ If you wish to save this into a log file.
 - [Felipe Romo](https://github.com/felromo)
 - [Zeid Tisnes](https://github.com/zedin27)
 
+## TODO
+
+- [ ] [React Mansory component suport](https://github.com/eiriklv/react-masonry-component.git)
+
 ## Resources
 
 1. ...
