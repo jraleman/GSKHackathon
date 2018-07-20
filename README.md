@@ -37,8 +37,8 @@ platform.
 Clone the repository:
 
 ```
-git clone https://github.com/jraleman/GSKHackathon narwhile
-cd narwhile
+git clone https://github.com/jraleman/GSKHackathon narwell
+cd narwell
 ```
 
 Install all the dependencies needed:
