@@ -1,0 +1,24 @@
+{
+  "name": "gskhackathon",
+  "version": "1.0.0",
+  "description": "## About",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jraleman/GSKHackathon.git"
+  },
+  "keywords": [
+    "immuno",
+    "hacks",
+    "hackathon"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jraleman/GSKHackathon/issues"
+  },
+  "homepage": "https://github.com/jraleman/GSKHackathon#readme"
+}
