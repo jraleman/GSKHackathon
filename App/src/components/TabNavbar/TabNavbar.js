@@ -43,13 +43,13 @@ class TabNavbar extends React.Component {
           label="StoryBook"
           icon={ <ChromeReaderModeIcon /> }
         />
-          <BottomNavigationAction
-            disabled={false}
-            label="Info"
-            icon={<InfoIcon />}
-            component={Link}
-            to='/info'
-          />
+        <BottomNavigationAction
+          disabled={ true }
+          label="Info"
+          icon={ <InfoIcon /> }
+          component={ Link }
+          to='/info'
+        />
       </BottomNavigation>
     );
   }

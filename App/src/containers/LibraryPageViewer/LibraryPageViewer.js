@@ -115,13 +115,14 @@ class LibraryPageViewer extends React.Component {
                       title={ storiesList[i].title }
                       description={ storiesList[i].description }
                       cover={ storiesList[i].cover }
-                      onPress={ () => this.navigateStory(i) }
+                      onPress={ () => alert('Coming Soon!') }
                     />
                  }
                </React.Fragment>
              );
         }, this)}
         </Grid>
+      { /* onPress={ () => this.navigateStory(i) } */ }
       </div>
     );
   }
