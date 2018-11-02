@@ -223,6 +223,7 @@ If you wish to save this into a log file.
 - [Daniel Gonzalez](https://github.com/dannygonza)
 - [Gerardo Malpartida](https://github.com/regien)
 - [Felipe Romo](https://github.com/felromo)
+- [Zeid Tisnes](https://github.com/zedin27)
 
 ## TODO
 
